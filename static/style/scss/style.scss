@@ -1,0 +1,19 @@
+@import "var";
+
+// *********************
+// LAYOUT
+// *********************
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// *********************
+// TYPOGRAPHY
+// *********************
+
+html,body{
+    font-family: $font-main;
+}

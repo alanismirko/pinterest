@@ -1,0 +1,56 @@
+// *********************
+// FONT
+// *********************
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+$font-main: 'Roboto', sans-serif;
+
+// *********************
+// COLOR
+// *********************
+$color-red: #F90000;
+$color-black: #111111;
+$color-white: #FFFFFF;
+$color-text: #1C1C1C;
+$color-text-hover: #2b2b2b;
+$color-grey-dark: #4F4F4F;
+$color-grey-light: #C6C6C6;
+
+// *********************
+// SPACING
+// *********************
+$spacing-xs: .3rem;
+$spacing-sm: .5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-xxl: 3rem;
+
+
+// *********************
+// WIDTH
+// *********************
+$width-full: 100%;
+$width-half: 50%;
+$width-xs: 20%;
+$width-sm: 45%;
+$width-md: 70%;
+$width-lg: 80%;
+
+// *********************
+// RADIUS
+// *********************
+$round-full: 50%;
+$round-md: 20px;
+$round-xs: 2px;
+
+
+// *********************
+// BREAKPOINTS
+// *********************
+$breakPoints: (
+    sm: 320px,
+    md: 480px,
+    lg: 768px,
+    xl: 1032px,
+    xxl: 1370px
+);
