@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+#login {
+  background-image: url("../../assets/background-login.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+}
+
+.column-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
