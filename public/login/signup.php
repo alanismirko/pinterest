@@ -10,7 +10,7 @@
         <h2>Welcome to Pinterest</h2>
         <p>Find new ideas to try</p>
 
-        <form action="">
+        <form action="../../private/signup.php" method="POST">
             <label for="email">Email</label>
             <input type="text" name="email" placeholder="Email">
 
@@ -18,7 +18,7 @@
             <input type="text" name="password" placeholder="Create a password">
 
             <label for="age">Age</label>
-            <input type="text" name="age" placeholder="Age">
+            <input type="date" name="age" placeholder="Age">
 
             <input type="submit" value="Continue">
         </form>

@@ -42,6 +42,7 @@
   font-weight: 400;
   font-size: 14px;
   padding-bottom: 0.3rem;
+  padding-left: 0.3rem;
 }
 .info-wrapper form input {
   border: 2px solid #a5a5a5;
@@ -60,6 +61,7 @@
   margin-top: 8px;
   text-align: center;
   border: none;
+  cursor: pointer;
 }
 
 h1 {
