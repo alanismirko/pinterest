@@ -4,6 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 $font-main: 'Roboto', sans-serif;
 
+    // FONT WEIGHT
+    $font-400: 400;
+    $font-500: 500;
+    $font-600: 600;
+    $font-700: 700;
+    $font-800: 800;
+
 // *********************
 // COLOR
 // *********************
@@ -14,6 +21,8 @@ $color-text: #1C1C1C;
 $color-text-hover: #2b2b2b;
 $color-grey-dark: #4F4F4F;
 $color-grey-light: #C6C6C6;
+$color-input: #a5a5a5;
+
 
 // *********************
 // SPACING
@@ -41,7 +50,7 @@ $width-lg: 80%;
 // *********************
 $round-full: 50%;
 $round-md: 20px;
-$round-xs: 2px;
+$round-xs: 13px;
 
 
 // *********************

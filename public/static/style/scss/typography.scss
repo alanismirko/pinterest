@@ -1,0 +1,22 @@
+h1{
+    color: $color-white;
+    font-size: 70px;
+    font-weight: $font-700;
+}
+
+h2{
+    color: $color-grey-dark;
+    font-weight: $font-600;
+    font-size: 26px;
+    text-align: center;
+}
+
+p{
+    color: $color-grey-dark;
+}
+
+a{
+    text-decoration: none;
+    color: $color-black;
+    cursor: pointer;
+}

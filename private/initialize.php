@@ -9,7 +9,7 @@
   define("PROJECT_PATH", dirname(PRIVATE_PATH));
   define("PUBLIC_PATH", PROJECT_PATH . '/public');
   define("STATIC_PATH", PROJECT_PATH . '/static');
-  define("SHARED_PATH", STATIC_PATH . '/shared');
+  define("SHARED_PATH", PUBLIC_PATH . '/static/shared');
 
 
 
