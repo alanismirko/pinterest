@@ -2,6 +2,7 @@
 @import "login";
 @import "typography";
 @import "pinterest";
+@import "nav";
 
 // *********************
 // LAYOUT
@@ -20,6 +21,7 @@
 html,body{
     font-family: $font-main;
 }
+
 
 // *********************
 // FLEX

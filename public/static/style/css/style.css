@@ -91,13 +91,36 @@ a {
   cursor: pointer;
 }
 
+.image-list-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 0px 50px 0px 50px;
+  column-count: 4;
+}
+.image-list-wrapper .image-container {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.image-list-wrapper .image-container .card {
+  padding: 0;
+  margin: 15px 10px;
+  border-radius: var(--card_border_radius);
+  transition: opacity 0.4s ease-in-out;
+  break-inside: avoid;
+}
+
 nav {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 0.5rem;
 }
 nav .logo-round {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 0px 20px 0px 20px;
 }
 nav form {
@@ -128,6 +151,11 @@ nav .dropdown-wrapper {
 nav .dropdown-wrapper .round {
   width: 60px;
   height: 60px;
+}
+nav .dropdown-wrapper button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 * {

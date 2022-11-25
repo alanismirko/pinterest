@@ -1,0 +1,48 @@
+nav{
+    width: 100%;
+    margin-top: $spacing-sm;
+    @extend .row-flex-nav;
+    .logo-round{
+        width: 30px;
+        height: 30px;
+        margin: 0px 20px 0px 20px;
+    }
+
+    form {
+        @extend .row-flex-nav;
+        padding-left: $spacing-md;
+        height: 45px;
+        border-radius: 50px;
+        background-color: $color-search;
+        width: 90%;
+        img{
+            width: 14px;
+        }
+        input{
+            border: none;
+            color: $color-grey-dark;
+            font-size: 16px;
+            background-color: $color-search;
+            width: 80%;
+            padding-left: $spacing-sm;
+        }
+        input:focus{
+            outline: none;
+        }
+    }
+
+    .dropdown-wrapper{
+        @extend .row-flex-nav;
+        margin-right: $spacing-lg;
+        margin-left: $spacing-sm;
+        .round{
+            width: 60px;
+            height: 60px;
+        }
+        button{
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
