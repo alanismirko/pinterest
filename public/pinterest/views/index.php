@@ -9,10 +9,16 @@
             <img src="../../static/assets/list/image1.svg" alt="">
         </div>
         <div class="card">
+            <img src="../../static/assets/list/image7.svg" alt="">
+        </div>
+        <div class="card">
             <img src="../../static/assets/list/image2.svg" alt="">
         </div>
         <div class="card">
             <img src="../../static/assets/list/image3.svg" alt="">
+        </div>
+        <div class="card">
+            <img src="../../static/assets/list/image8.svg" alt="">
         </div>
         <div class="card">
             <img src="../../static/assets/list/image4.svg" alt="">
