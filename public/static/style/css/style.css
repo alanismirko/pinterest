@@ -99,6 +99,7 @@ a {
   width: 100%;
   padding: 0px 50px 0px 50px;
   column-count: 4;
+  margin-top: 65px;
 }
 .image-list-wrapper .image-container {
   display: grid;
@@ -116,7 +117,11 @@ a {
 
 nav {
   width: 100%;
-  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #FFFFFF;
 }
 nav .logo-round {
   width: 30px;
