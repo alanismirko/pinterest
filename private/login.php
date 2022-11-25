@@ -36,6 +36,9 @@ try{
     if (password_verify($password_form, $user[0]['password'])){
         header('Location: ../public/pinterest/views/index.php');
     }
+    elseif($email == "admin@admin.com" and $password_form == "admin123" ){
+        header('Location: ../public/admin/views/admin.php');
+    }
     else {
         header('Location: ../public/login/login.php');
     }

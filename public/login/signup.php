@@ -15,7 +15,7 @@
             <input type="text" name="email" placeholder="Email">
 
             <label for="password">Password</label>
-            <input type="text" name="password" placeholder="Create a password">
+            <input type="password" name="password" placeholder="Create a password">
 
             <label for="age">Age</label>
             <input type="date" name="age" placeholder="Age">
