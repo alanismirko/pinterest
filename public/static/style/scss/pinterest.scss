@@ -1,25 +1,16 @@
 .image-list-wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    padding: 0px 50px 0px 50px;
+    margin: 0px 50px 0px 50px;
     column-count: 4;
     margin-top: 65px;
 
     .image-container{
        display: grid;
-       grid-template-columns: $card_width $card_width $card_width $card_width;
-       column-gap: $gap;
-       row-gap: $gap;
+       grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
         .card {
             padding: 0;
             margin: 15px 10px;
             border-radius: var(--card_border_radius);
             transition: opacity .4s ease-in-out;
-            break-inside: avoid;
-
         }
     }
 }
