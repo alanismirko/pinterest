@@ -1,6 +1,7 @@
 @import "var";
 @import "login";
 @import "typography";
+@import "pinterest";
 
 // *********************
 // LAYOUT
@@ -39,6 +40,12 @@ html,body{
 .column-flex{
     display: flex;
     flex-direction: column;
+}
+
+.row-flex-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .row-flex{
