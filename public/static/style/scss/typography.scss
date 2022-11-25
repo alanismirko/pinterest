@@ -14,3 +14,9 @@ h2{
 p{
     color: $color-grey-dark;
 }
+
+a{
+    text-decoration: none;
+    color: $color-black;
+    cursor: pointer;
+}

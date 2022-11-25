@@ -2,7 +2,7 @@
 
 <?php include(SHARED_PATH . '/header.php'); ?>
 
-<div id="login">
+<div id="signup">
     <h1>Sign up to <br> get your <br> ideas</h1>
 
     <div class="info-wrapper">
@@ -28,7 +28,7 @@
             <b>Privacy Policy</b>
         </p>
 
-        <a>Already a memeber? Log in</a>
+        <a href="login.php">Already a memeber? Log in</a>
     </div>
 </div>
 
