@@ -9,6 +9,12 @@
     background-size: cover;
 }
 
+#login{
+    form{
+        margin-top: $spacing-lg;
+    }
+}
+
 .info-wrapper{
     @extend .column-flex-center;
     width: 484px;

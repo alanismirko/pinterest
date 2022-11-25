@@ -9,6 +9,10 @@
   background-size: cover;
 }
 
+#login form {
+  margin-top: 1.5rem;
+}
+
 .info-wrapper {
   width: 484px;
   height: 692px;
