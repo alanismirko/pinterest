@@ -95,6 +95,7 @@ a {
   margin: 0px 50px 0px 50px;
   column-count: 4;
   margin-top: 65px;
+  margin-bottom: 1.5rem;
 }
 .image-list-wrapper .image-container {
   display: grid;
@@ -105,6 +106,13 @@ a {
   margin: 15px 10px;
   border-radius: var(--card_border_radius);
   transition: opacity 0.4s ease-in-out;
+  break-inside: avoid;
+}
+.image-list-wrapper .image-container .card p {
+  padding-top: 0.5rem;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111111;
 }
 
 nav {
@@ -178,7 +186,7 @@ html, body {
   align-items: center;
 }
 
-.column-flex, .info-wrapper form {
+.column-flex, .info-wrapper form, .image-list-wrapper .image-container .card {
   display: flex;
   flex-direction: column;
 }

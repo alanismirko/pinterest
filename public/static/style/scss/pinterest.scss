@@ -2,6 +2,7 @@
     margin: 0px 50px 0px 50px;
     column-count: 4;
     margin-top: 65px;
+    margin-bottom: $spacing-lg;
 
     .image-container{
        display: grid;
@@ -11,6 +12,15 @@
             margin: 15px 10px;
             border-radius: var(--card_border_radius);
             transition: opacity .4s ease-in-out;
+            break-inside: avoid;
+            @extend .column-flex;
+
+            p{
+                padding-top: $spacing-sm;
+                font-weight: $font-600;
+                font-size: 14px;
+                color: $color-black
+            }
         }
     }
 }

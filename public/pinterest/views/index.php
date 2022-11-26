@@ -7,27 +7,42 @@
     <div class="image-container">
         <div class="card">
             <img src="../../static/assets/list/image1.svg" alt="">
+            <p>Abstract</p>
         </div>
+
         <div class="card">
             <img src="../../static/assets/list/image7.svg" alt="">
+            <p>Flowers in the vase</p>
         </div>
+
         <div class="card">
             <img src="../../static/assets/list/image2.svg" alt="">
+            <p>Procreate illustration</p>
         </div>
+
         <div class="card">
             <img src="../../static/assets/list/image3.svg" alt="">
+            <p>Look into the future</p>
         </div>
+
         <div class="card">
             <img src="../../static/assets/list/image8.svg" alt="">
+            <p>Astrnaout in the space</p>
         </div>
+
         <div class="card">
             <img src="../../static/assets/list/image4.svg" alt="">
+            <p>Drop of the rain</p>
         </div>
+
         <div class="card">
             <img src="../../static/assets/list/image5.svg" alt="">
+            <p>Walk in the forest</p>
         </div>
+        
         <div class="card">
             <img src="../../static/assets/list/image6.svg" alt="">
+            <p>Fish drawing</p>
         </div>
     </div>
 </div>
