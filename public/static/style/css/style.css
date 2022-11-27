@@ -157,10 +157,14 @@ nav .dropdown-wrapper .round {
   width: 60px;
   height: 60px;
 }
-nav .dropdown-wrapper button {
-  background: none;
-  border: none;
+nav .dropdown-wrapper #dropdownButton {
   cursor: pointer;
+  position: relative;
+}
+nav .dropdown-wrapper #dropdownModal {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
 }
 
 * {
@@ -173,7 +177,7 @@ html, body {
   font-family: "Roboto", sans-serif;
 }
 
-.column-flex-center-center {
+.column-flex-center-center, nav .dropdown-wrapper #dropdownModal {
   display: flex;
   flex-direction: column;
   justify-content: center;

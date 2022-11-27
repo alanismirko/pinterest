@@ -43,10 +43,20 @@ nav{
             width: 60px;
             height: 60px;
         }
-        button{
-            background: none;
-            border: none;
-            cursor: pointer;
+        
+            #dropdownButton{
+                cursor: pointer;
+                position: relative;
+            }
+
+            #dropdownModal{
+                @extend .column-flex-center-center;
+                display: none;
+                position: absolute;
+                background-color: $color-white;
+            }
         }
+
     }
-}
+
+

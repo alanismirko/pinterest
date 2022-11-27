@@ -12,12 +12,12 @@
 
         <div class="card">
             <img src="../../static/assets/list/image7.svg" alt="">
-            <p>Flowers in the vase</p>
+            <p>Astronout in the space</p>
         </div>
 
         <div class="card">
             <img src="../../static/assets/list/image2.svg" alt="">
-            <p>Procreate illustration</p>
+            <p>Flowers in the vase</p>
         </div>
 
         <div class="card">
@@ -27,7 +27,7 @@
 
         <div class="card">
             <img src="../../static/assets/list/image8.svg" alt="">
-            <p>Astrnaout in the space</p>
+            <p>Walk in the forest</p>
         </div>
 
         <div class="card">
@@ -37,9 +37,9 @@
 
         <div class="card">
             <img src="../../static/assets/list/image5.svg" alt="">
-            <p>Walk in the forest</p>
+            <p>Sky view</p>
         </div>
-        
+
         <div class="card">
             <img src="../../static/assets/list/image6.svg" alt="">
             <p>Fish drawing</p>

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../../static/style/css/style.css">
     <link rel="icon" href="https://s.pinimg.com/webapp/favicon-54a5b2af.png">
 
+    <script src="../js/script.js" defer></script>
+
     <title>Pinterest</title>
 </head>
 <body>
@@ -23,11 +25,21 @@
         <img class="round" src="../../static/assets/create.svg" alt="">
     </a>
 
-    <button>
-    <img src="../../static/assets/dropwdown.svg" alt="">
 
-    </button>
+    <div id="dropdownButton" onclick="openDropwdown()">
+        <img  src="../../static/assets/dropwdown.svg" alt="">
+        <div id="dropdownModal">
+            <a href="">Something</a>
+            <a href="">Something 2</a>
+            <a href="">Something 3</a>
+        </div>
     </div>
 
+    </div>
+
+
+
 </nav>
+
+
     
