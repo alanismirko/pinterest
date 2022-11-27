@@ -52,6 +52,47 @@ nav{
             #dropdownModal{
                 display: none;
                 position: absolute;
+
+                .profile-link-wrapper{
+                    @extend .row-flex-nav;
+                    justify-content:baseline;
+
+                    p{
+                        margin: 0px;
+                    }
+
+                    .userLetter{
+                        border-radius: $round-full;
+                        background-color: $color-grey-light;
+                        height: 50px;
+                        width: 50px;
+                        @extend .column-flex;
+                        margin: 0px;
+                        padding: 0px;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 20px;
+                    }
+                }
+
+                p{
+                    font-size: 12px;
+                    font-weight: $font-400;
+                    padding: 0px 0px $spacing-sm $spacing-sm;
+                    margin-top: $spacing-md;
+                }
+
+                a{
+                    font-weight: $font-600;
+                    font-size: 16px;
+                    color: $color-black;
+                    padding: $spacing-sm;
+                }
+
+                a:hover, .profile-link-wrapper:hover{
+                    background-color: $color-grey-light;
+                    border-radius: 6px;
+                }
             }
 
             .dropdownFlex{

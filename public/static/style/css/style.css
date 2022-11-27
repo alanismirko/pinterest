@@ -165,6 +165,39 @@ nav .dropdown-wrapper #dropdownModal {
   display: none;
   position: absolute;
 }
+nav .dropdown-wrapper #dropdownModal .profile-link-wrapper {
+  justify-content: baseline;
+}
+nav .dropdown-wrapper #dropdownModal .profile-link-wrapper p {
+  margin: 0px;
+}
+nav .dropdown-wrapper #dropdownModal .profile-link-wrapper .userLetter {
+  border-radius: 50%;
+  background-color: #C6C6C6;
+  height: 50px;
+  width: 50px;
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+nav .dropdown-wrapper #dropdownModal p {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0px 0px 0.5rem 0.5rem;
+  margin-top: 1rem;
+}
+nav .dropdown-wrapper #dropdownModal a {
+  font-weight: 600;
+  font-size: 16px;
+  color: #111111;
+  padding: 0.5rem;
+}
+nav .dropdown-wrapper #dropdownModal a:hover, nav .dropdown-wrapper #dropdownModal .profile-link-wrapper:hover {
+  background-color: #C6C6C6;
+  border-radius: 6px;
+}
 nav .dropdown-wrapper .dropdownFlex {
   display: flex !important;
   flex-direction: column;
@@ -200,12 +233,12 @@ html, body {
   align-items: center;
 }
 
-.column-flex, .info-wrapper form, .image-list-wrapper .image-container .card {
+.column-flex, .info-wrapper form, .image-list-wrapper .image-container .card, nav .dropdown-wrapper #dropdownModal .profile-link-wrapper .userLetter {
   display: flex;
   flex-direction: column;
 }
 
-.row-flex-nav, nav, nav form, nav .dropdown-wrapper {
+.row-flex-nav, nav, nav form, nav .dropdown-wrapper, nav .dropdown-wrapper #dropdownModal .profile-link-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
