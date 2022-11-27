@@ -21,19 +21,19 @@
     </form>
 
     <div class="dropdown-wrapper">
-    <a href="#">
-        <img class="round" src="../../static/assets/create.svg" alt="">
-    </a>
+        <a href="#">
+            <img class="round" src="../../static/assets/create.svg" alt="">
+        </a>
 
 
-    <div id="dropdownButton" onclick="openDropwdown()">
-        <img  src="../../static/assets/dropwdown.svg" alt="">
-        <div id="dropdownModal">
-            <a href="">Something</a>
-            <a href="">Something 2</a>
-            <a href="">Something 3</a>
+        <div id="dropdownButton">
+            <img  src="../../static/assets/dropwdown.svg" alt="">
+            <div id="dropdownModal">
+                <a href="">Something</a>
+                <a href="">Something 2</a>
+                <a href="">Logout</a>
+            </div>
         </div>
-    </div>
 
     </div>
 

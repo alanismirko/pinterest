@@ -2,6 +2,11 @@
 
 <?php require_once(SHARED_PATH . '/header_pinterest.php'); ?>
 
+<?php
+    if(!isset($_COOKIE["login"]))
+    header("location: ../../login/login.php"); 
+?>
+
 
 <div class="image-list-wrapper">
     <div class="image-container">

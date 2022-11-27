@@ -50,10 +50,21 @@ nav{
             }
 
             #dropdownModal{
-                @extend .column-flex-center-center;
                 display: none;
                 position: absolute;
+            }
+
+            .dropdownFlex{
+                display: flex !important;
+                flex-direction: column;
+                justify-content: center;
+                width: 260px;
                 background-color: $color-white;
+                border-radius: $round-md;
+                margin-left: -217px;
+                margin-top: 14px;    
+                padding: $spacing-md;            
+
             }
         }
 

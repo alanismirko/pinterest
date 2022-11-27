@@ -164,7 +164,17 @@ nav .dropdown-wrapper #dropdownButton {
 nav .dropdown-wrapper #dropdownModal {
   display: none;
   position: absolute;
+}
+nav .dropdown-wrapper .dropdownFlex {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  width: 260px;
   background-color: #FFFFFF;
+  border-radius: 20px;
+  margin-left: -217px;
+  margin-top: 14px;
+  padding: 1rem;
 }
 
 * {
@@ -177,7 +187,7 @@ html, body {
   font-family: "Roboto", sans-serif;
 }
 
-.column-flex-center-center, nav .dropdown-wrapper #dropdownModal {
+.column-flex-center-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
