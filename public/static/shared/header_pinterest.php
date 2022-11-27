@@ -31,7 +31,7 @@
             <div id="dropdownModal">
                 <a href="">Something</a>
                 <a href="">Something 2</a>
-                <a href="">Logout</a>
+                <a href="../../../private/logout.php">Logout</a>
             </div>
         </div>
 
