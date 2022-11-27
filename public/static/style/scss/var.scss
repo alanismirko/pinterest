@@ -18,10 +18,11 @@ $color-red: #F90000;
 $color-black: #111111;
 $color-white: #FFFFFF;
 $color-text: #1C1C1C;
-$color-text-hover: #2b2b2b;
+$color-text-hover: #E9E9E9;
 $color-grey-dark: #4F4F4F;
 $color-grey-light: #C6C6C6;
 $color-input: #a5a5a5;
+$color-search: #EFEFEF;
 
 
 // *********************
@@ -51,6 +52,16 @@ $width-lg: 80%;
 $round-full: 50%;
 $round-md: 20px;
 $round-xs: 13px;
+
+// *********************
+// IMAGE LAYOUT
+// *********************
+$card_width: 250px;
+$gap: 20px;
+$card_border_radius: 16px;
+$card_small: 26;
+$card_med: 33;
+$card_large: 45;
 
 
 // *********************

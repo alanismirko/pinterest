@@ -1,0 +1,114 @@
+nav{
+    width: 100%;
+    padding-top: $spacing-sm;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: $color-white;
+    @extend .row-flex-nav;
+    .logo-round{
+        width: 30px;
+        height: 30px;
+        margin: 0px 20px 0px 20px;
+    }
+
+    form {
+        @extend .row-flex-nav;
+        padding-left: $spacing-md;
+        height: 45px;
+        border-radius: 50px;
+        background-color: $color-search;
+        width: 90%;
+        img{
+            width: 14px;
+        }
+        input{
+            border: none;
+            color: $color-grey-dark;
+            font-size: 16px;
+            background-color: $color-search;
+            width: 80%;
+            padding-left: $spacing-sm;
+        }
+        input:focus{
+            outline: none;
+        }
+    }
+
+    .dropdown-wrapper{
+        @extend .row-flex-nav;
+        margin-right: $spacing-lg;
+        margin-left: $spacing-sm;
+        .round{
+            width: 60px;
+            height: 60px;
+        }
+        
+            #dropdownButton{
+                cursor: pointer;
+                position: relative;
+            }
+
+            #dropdownModal{
+                display: none;
+                position: absolute;
+
+                .profile-link-wrapper{
+                    @extend .row-flex-nav;
+                    justify-content:baseline;
+
+                    p{
+                        margin: 0px;
+                    }
+
+                    .userLetter{
+                        border-radius: $round-full;
+                        background-color: $color-grey-light;
+                        height: 50px;
+                        width: 50px;
+                        @extend .column-flex;
+                        margin: 0px;
+                        padding: 0px;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 20px;
+                    }
+                }
+
+                p{
+                    font-size: 12px;
+                    font-weight: $font-400;
+                    padding: 0px 0px $spacing-sm $spacing-sm;
+                    margin-top: $spacing-md;
+                }
+
+                a{
+                    font-weight: $font-600;
+                    font-size: 16px;
+                    color: $color-black;
+                    padding: $spacing-sm;
+                }
+
+                a:hover, .profile-link-wrapper:hover{
+                    background-color: $color-grey-light;
+                    border-radius: 6px;
+                }
+            }
+
+            .dropdownFlex{
+                display: flex !important;
+                flex-direction: column;
+                justify-content: center;
+                width: 260px;
+                background-color: $color-white;
+                border-radius: $round-md;
+                margin-left: -217px;
+                margin-top: 14px;    
+                padding: $spacing-md;            
+
+            }
+        }
+
+    }
+
+
