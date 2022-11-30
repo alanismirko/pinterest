@@ -1,5 +1,5 @@
 <?php
-require_once('./initialize.php');
+require_once('initialize.php');
 require_once('db.php');
 
 try{
@@ -15,6 +15,8 @@ try{
 
 }catch(PDOException $ex){
     echo $ex;
+    echo '</br>';
+    echo 'bitch';
 }
 
 try{
@@ -25,17 +27,19 @@ try{
         $query_session->bindValue(':session_created_at', $current_date);
         $query_session->execute();
         setcookie('login', $session_id, time() + 60*60*24*30, '/');
-        header('Location: ../public/pinterest/views/index.php');
+        header('Location: /userlogin');
     }
     elseif($email == "admin@admin.com" and $password_form == "admin123" ){
         setcookie("login", "$session_id");
-        header('Location: ../public/admin/views/admin.php');
+        header('Location: /admin');
     }
     else {
-        header('Location: ../public/login/login.php');
+        header('Location: /login');
     }
 }catch(Exception $e){
     echo $e;
+    echo '</br>';
+    echo 'ERRRRRRRRRRROOOOR';
 }
 
 
