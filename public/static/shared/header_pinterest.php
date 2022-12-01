@@ -1,5 +1,43 @@
+<?php
+
+require_once('././private/initialize.php');
+require_once('././private/db.php');
+// require_once (PRIVATE_PATH . '/db.php');
+
+$session_id = $_COOKIE['login'];
+
+// WORKS - get user email
+$query_user = $db->prepare('SELECT * FROM sessions JOIN users WHERE session_id=:session_id AND session_user_email=email');
+$query_user->bindValue(':session_id', $session_id);
+$query_user->execute();
+$query_user = $query_user->fetchAll();
+$user_fullname = $query_user[0]['first_name'] . $query_user[0]['first_name'];
+$user_nickname = $query_user[0]['nick_name'];
+$user_email = $query_user[0]['email'];
+$user_dateofbirth = $query_user[0]['date_of_birth'];
+$user_letter = ucfirst(substr($user_nickname, 0, 1));
+
+
+// WORKS - get user email
+// $query_user_email = $db->prepare('SELECT session_user_email FROM sessions WHERE session_id=:session_id');
+// $query_user_email->bindValue(':session_id', $session_id);
+// $query_user_email->execute();
+// $query_user_email = $query_user_email->fetchAll();
+// $user_email = $query_user_email[0]['session_user_email'];
+
+// WORKS - get user birt of date
+// $email = 'alex@alex.com';
+// $query_user = $db->prepare('SELECT * FROM users WHERE email=:email');
+// $query_user->bindValue(':email', $email);
+// $query_user->execute();
+// $user = $query_user->fetchAll();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,53 +49,53 @@
 
     <title>Pinterest</title>
 </head>
+
 <body>
 
-<nav>
-    <img class="logo-round" src="./public/static/assets/logo.svg" alt="Logo">
-    <form  action="">
-        <img src="./public/static/assets/search_icon.svg" alt="">
-        <input  type="search" placeholder="Search">
-    </form>
+   <nav>
+        <img class="logo-round" src="./public/static/assets/logo.svg" alt="Logo">
+        <form action="">
+            <img src="./public/static/assets/search_icon.svg" alt="">
+            <input type="search" placeholder="Search">
+        </form>
 
-    <div class="dropdown-wrapper">
-        <a href="#">
-            <img class="round" src="./public/static/assets/create.svg" alt="">
-        </a>
+        <div class="dropdown-wrapper">
+            <a href="#">
+                <img class="round" src="./public/static/assets/create.svg" alt="">
+            </a>
 
 
-        <div id="dropdownButton">
-            <img  src="./public/static/assets/dropwdown.svg" alt="">
-            <div id="dropdownModal">
+            <div id="dropdownButton">
+                <img src="./public/static/assets/dropwdown.svg" alt="">
+                <div id="dropdownModal">
 
-                <p>Currently in</p>
-                <div class="profile-link-wrapper">
-                    <p class="userLetter">I</p>
-                    <div class="user-info-wrapper">
-                        <p><strong>Username</strong></p>
-                        <p>Personal</p>
-                        <p>email</p>
+                    <p>Currently in</p>
+
+                    <div class="profile-link-wrapper">
+                        <p class="userLetter"><?php echo $user_letter ?></p>
+                        <div class="user-info-wrapper">
+                            <p><strong><?php echo $user_fullname ?></strong></p>
+                            <p>@<?php echo $user_nickname ?></p>
+                            <p>Personal</p>
+                            <p><?php echo $user_email ?></p>
+                        </div>
                     </div>
+
+                    <p>Your accounts</p>
+                    <a href="#">Add account</a>
+                    <a href="#">Convert to business</a>
+
+                    <p>More options</p>
+                    <a href="#">Settings</a>
+                    <a href="https://help.pinterest.com/en?source=gear_menu_web">Get help</a>
+                    <a href="https://policy.pinterest.com/en/terms-of-service">See terms of service</a>
+                    <a href="https://policy.pinterest.com/en/privacy-policy">See privacy policy</a>
+                    <a href="/logout">Logout</a>
                 </div>
-
-                <p>Your accounts</p>
-                <a href="#">Add account</a>
-                <a href="#">Convert to business</a>
-
-                <p>More options</p>
-                <a href="#">Settings</a>
-                <a href="https://help.pinterest.com/en?source=gear_menu_web">Get help</a>
-                <a href="https://policy.pinterest.com/en/terms-of-service">See terms of service</a>
-                <a href="https://policy.pinterest.com/en/privacy-policy">See privacy policy</a>
-                <a href="/logout">Logout</a>
             </div>
+
         </div>
 
-    </div>
 
 
-
-</nav>
-
-
-    
+    </nav> 
