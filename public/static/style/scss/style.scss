@@ -3,6 +3,7 @@
 @import "typography";
 @import "pinterest";
 @import "nav";
+@import "profile";
 
 // *********************
 // LAYOUT
@@ -56,4 +57,11 @@ html,body{
     justify-content: center;
     align-items: center;
     gap: 50px;
+}
+
+button {
+    min-width: 60px;
+    margin: 0 4px;
+    background-color: #E9E9E9;
+    color: $color-grey-dark;
 }

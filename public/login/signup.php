@@ -1,4 +1,4 @@
-<?php require_once('../../private/initialize.php'); ?>
+<?php require_once('././private/initialize.php'); ?>
 
 <?php include(SHARED_PATH . '/header.php'); ?>
 
@@ -6,11 +6,11 @@
     <h1>Sign up to <br> get your <br> ideas</h1>
 
     <div class="info-wrapper">
-        <img src="../static/assets/logo.svg">
+    <img src="./public/static/assets/logo.svg">
         <h2>Welcome to Pinterest</h2>
         <p>Find new ideas to try</p>
 
-        <form action="../../private/signup.php" method="POST">
+        <form action="/signup" method="POST">
             <label for="email">Email</label>
             <input type="text" name="email" placeholder="Email">
 

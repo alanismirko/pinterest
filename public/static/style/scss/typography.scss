@@ -1,3 +1,5 @@
+@import "var";
+
 h1{
     color: $color-white;
     font-size: 70px;
@@ -9,6 +11,12 @@ h2{
     font-weight: $font-600;
     font-size: 26px;
     text-align: center;
+}
+
+h3 {
+    color: $color-black;
+    font-size: 50px;
+    font-weight: $font-500;
 }
 
 p{

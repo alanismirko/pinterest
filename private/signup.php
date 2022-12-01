@@ -1,5 +1,5 @@
 <?php
-require_once('./initialize.php');
+require_once('initialize.php');
 require_once('db.php');
 
 try{
@@ -19,7 +19,7 @@ try{
     $query_user->execute();
 
 
-    header('Location: ../public/login/login.php');
+    header('Location: /login');
 
 }catch(PDOException $ex){
     echo $ex;

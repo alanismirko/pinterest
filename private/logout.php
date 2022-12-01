@@ -1,6 +1,6 @@
 <?php
 
-require_once('./initialize.php');
+require_once('initialize.php');
 require_once('db.php');
 
 try{
@@ -15,9 +15,9 @@ try{
             echo $ex;
         }
         unset($_COOKIE['login']); 
-        header("location: ./login.php"); 
+        header("location: /login"); 
     } else {
-        header('Location: ../public/pinterest/views/index.php');
+        header('Location: /userlogin');
     }
     
 }catch(Exception $ex){
