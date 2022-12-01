@@ -38,8 +38,6 @@ try{
     }
 }catch(Exception $e){
     echo $e;
-    echo '</br>';
-    echo 'ERRRRRRRRRRROOOOR';
 }
 
 

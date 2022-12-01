@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 #login, #signup {
   background-image: url("../../assets/background-login.png");
   height: 100vh;
@@ -86,12 +81,6 @@ h2 {
   text-align: center;
 }
 
-h3 {
-  color: #111111;
-  font-size: 50px;
-  font-weight: 500;
-}
-
 p {
   color: #4F4F4F;
 }
@@ -104,6 +93,8 @@ a {
 
 .image-list-wrapper {
   margin: 0px 50px 0px 50px;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
   column-count: 4;
   margin-top: 65px;
   margin-bottom: 1.5rem;
@@ -117,6 +108,8 @@ a {
   margin: 15px 10px;
   border-radius: var(--card_border_radius);
   transition: opacity 0.4s ease-in-out;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
   break-inside: avoid;
 }
 .image-list-wrapper .image-container .card p {
@@ -221,36 +214,16 @@ nav .dropdown-wrapper .dropdownFlex {
   padding: 1rem;
 }
 
-.profile-container {
-  margin-top: 8rem;
-}
-
 .profile-header-wrapper .userLetter {
   border-radius: 50%;
   background-color: #C6C6C6;
-  height: 120px;
-  width: 120px;
+  height: 200px;
+  width: 200px;
   margin: 0px;
   padding: 0px;
   justify-content: center;
   align-items: center;
   font-size: 50px;
-  color: #111111;
-}
-.profile-header-wrapper .user-info-wrapper {
-  text-align: center;
-}
-.profile-header-wrapper .user-info-wrapper * {
-  margin-top: 0.5rem;
-}
-.profile-header-wrapper .user-info-wrapper h2 {
-  color: #111111;
-}
-.profile-header-wrapper .user-info-wrapper p:nth-of-type(1) {
-  color: #a5a5a5;
-}
-.profile-header-wrapper .bitch {
-  color: blue;
 }
 
 * {
@@ -294,12 +267,3 @@ html, body {
   align-items: center;
   gap: 50px;
 }
-
-button {
-  min-width: 60px;
-  margin: 0 4px;
-  background-color: #E9E9E9;
-  color: #4F4F4F;
-}
-
-/*# sourceMappingURL=style.css.map */

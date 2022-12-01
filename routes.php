@@ -42,6 +42,12 @@ post('/signup', 'private/signup.php');
 
 
 
+// USER PROFILE
+get('/$user_nickname', 'public/pinterest/views/profile.php');
+
+
+
+
 // Dynamic GET. Example with 1 variable
 // The $id will be available in user.php
 get('/user/$id', 'views/user');

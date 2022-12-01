@@ -11,7 +11,7 @@ $query_user = $db->prepare('SELECT * FROM sessions JOIN users WHERE session_id=:
 $query_user->bindValue(':session_id', $session_id);
 $query_user->execute();
 $query_user = $query_user->fetchAll();
-$user_fullname = $query_user[0]['first_name'] . $query_user[0]['first_name'];
+$user_fullname = $query_user[0]['first_name'] . ' ' . $query_user[0]['first_name'];
 $user_nickname = $query_user[0]['nick_name'];
 $user_email = $query_user[0]['email'];
 $user_dateofbirth = $query_user[0]['date_of_birth'];
@@ -52,7 +52,7 @@ $user_letter = ucfirst(substr($user_nickname, 0, 1));
 
 <body>
 
-   <nav>
+    <nav>
         <img class="logo-round" src="./public/static/assets/logo.svg" alt="Logo">
         <form action="">
             <img src="./public/static/assets/search_icon.svg" alt="">
@@ -71,15 +71,17 @@ $user_letter = ucfirst(substr($user_nickname, 0, 1));
 
                     <p>Currently in</p>
 
+                    <a href="/$user_nickname">
                     <div class="profile-link-wrapper">
-                        <p class="userLetter"><?php echo $user_letter ?></p>
-                        <div class="user-info-wrapper">
-                            <p><strong><?php echo $user_fullname ?></strong></p>
-                            <p>@<?php echo $user_nickname ?></p>
-                            <p>Personal</p>
-                            <p><?php echo $user_email ?></p>
-                        </div>
+                            <p class="userLetter"><?php echo $user_letter ?></p>
+                            <div class="user-info-wrapper">
+                                <p><strong><?php echo $user_fullname ?></strong></p>
+                                <p>@<?php echo $user_nickname ?></p>
+                                <p>Personal</p>
+                                <p><?php echo $user_email ?></p>
+                            </div>
                     </div>
+                    </a>
 
                     <p>Your accounts</p>
                     <a href="#">Add account</a>
@@ -98,4 +100,4 @@ $user_letter = ucfirst(substr($user_nickname, 0, 1));
 
 
 
-    </nav> 
+    </nav>

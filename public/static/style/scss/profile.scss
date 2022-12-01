@@ -1,0 +1,44 @@
+@import "var";
+
+
+.profile-container {
+    margin-top: $spacing-xxxl;
+}
+
+.profile-header-wrapper {
+    @extend .column-flex-center-center;
+
+    .userLetter {
+        border-radius: $round-full;
+        background-color: $color-grey-light;
+        height: 120px;
+        width: 120px;
+        @extend .column-flex;
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        color: $color-black;
+    }
+
+    .user-info-wrapper {
+        * {
+            margin-top: $spacing-sm;
+        }
+
+        text-align: center;
+
+        h2 {
+            color: $color-black;
+        }
+
+        p:nth-of-type(1) {
+            color: $color-input;
+        }
+    }
+
+    .bitch {
+        color: blue;
+    }
+}
