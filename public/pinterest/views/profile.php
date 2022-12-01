@@ -8,7 +8,7 @@ if (!isset($_COOKIE["login"]))
 ?>
 
 
-<div class="profile-container">
+<section class="profile-container">
 
     <div class="profile-header-wrapper">
         <p class="userLetter"><?php echo $user_letter ?></p>
@@ -16,13 +16,14 @@ if (!isset($_COOKIE["login"]))
             <h3><?php echo $user_fullname ?></h3>
             <p>@<?php echo $user_nickname ?></p>
             <p>0 following</p>
-            <button>Edit profile</button>
+            <button><a href="/<?php echo $user_nickname?>/edit-profile">Edit profile</a></button>
+
         </div>
     </div>
 
     <!-- images by user come here -->
 
-</div>
+</section>
 
 
 <?php include(SHARED_PATH . '/footer.php'); ?>

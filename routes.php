@@ -23,7 +23,6 @@ get('/userlogin', 'public/pinterest/views/index.php');
 
 
 
-
 // LOG OUT 
 get('/logout', 'private/logout.php');
 
@@ -34,11 +33,9 @@ get('/admin', 'public/admin/admin.php');
 
 
 
-
 // SIGN UP
 get('/signup', 'public/login/signup.php');
 post('/signup', 'private/signup.php');
-
 
 
 
@@ -47,18 +44,17 @@ get('/$user_nickname', 'public/pinterest/views/profile.php');
 
 
 
-
-// Dynamic GET. Example with 1 variable
-// The $id will be available in user.php
-get('/user/$id', 'views/user');
-
+// UPDATE PROFILE
+get('/$user_nickname/edit-profile', 'public/pinterest/views/settings.php');
+post('/update-profile', 'private/update-profile.php');
 
 
-// Dynamic GET. Example with 2 variables
-// The $name will be available in full_name.php
-// The $last_name will be available in full_name.php
-// In the browser point to: localhost/user/X/Y
-get('/user/$name/$last_name', 'views/full_name.php');
+// DELETE PROFILE
+get('/$user_nickname/account-settings', 'public/pinterest/views/settings.php');
+post('/delete-profile', 'private/delete-profile.php');
+
+
+
 
 
 
