@@ -10,26 +10,31 @@
         <h2>Welcome to Pinterest</h2>
         <p>Find new ideas to try</p>
 
-        <form action="/signup" method="POST">
-            <label for="user_email">Email</label>
-            <input type="text" name="user_email" placeholder="Email">
+        <form action="/signup" method="POST" data-steps="1">
+            <div class="signup-part1">
+                <label for="user_email">Email</label>
+                <input type="text" name="user_email" placeholder="Email">
 
-            <label for="user_password">Password</label>
-            <input type="password" name="user_password" placeholder="Create a password">
+                <label for="user_password">Password</label>
+                <input type="password" name="user_password" placeholder="Create a password">
 
-            <label for="date_of_birth">Date of birth</label>
-            <input type="date" name="user_dateofbirth">
+                <label for="date_of_birth">Date of birth</label>
+                <input type="date" name="user_dateofbirth">
 
-            <label for="user_firstname">First Name</label>
-            <input type="text" name="user_firstname" placeholder="First Name">
+                <button type="button">Continue</button>
+            </div>
+            <div class="signup-part2" >
+                <label for="user_firstname">First Name</label>
+                <input type="text" name="user_firstname" placeholder="First Name">
 
-            <label for="user_lastname">Last Name</label>
-            <input type="text" name="user_lastname" placeholder="Last Name">
+                <label for="user_lastname">Last Name</label>
+                <input type="text" name="user_lastname" placeholder="Last Name">
 
-            <label for="user_nickname">Username</label>
-            <input type="text" name="user_nickname" placeholder="Username">
+                <label for="user_nickname">Username</label>
+                <input type="text" name="user_nickname" placeholder="Username">
 
-            <input type="submit" value="Continue">
+                <input type="submit" value="Sign up">
+            </div>
         </form>
 
         <p class="terms">By continuing, you agree to Pinterest's <br>

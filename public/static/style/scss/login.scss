@@ -10,6 +10,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    button {
+        margin-top: $spacing-sm;
+    }
 }
 
 #login{
@@ -47,3 +51,16 @@
 
 
 }
+
+#signup form[data-steps="1"] .signup-part1,
+#signup form[data-steps="2"] .signup-part2
+{
+    display: block;
+}
+
+#signup form[data-steps="1"] .signup-part2,
+#signup form[data-steps="2"] .signup-part1
+{
+    display: none;
+}
+
