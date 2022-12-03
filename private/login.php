@@ -29,10 +29,6 @@ try{
         setcookie('login', $session_id, time() + 60*60*24*30, '/');
         header('Location: /userlogin');
     }
-    elseif($email == "admin@admin.com" and $password_form == "admin123" ){
-        setcookie("login", "$session_id");
-        header('Location: /admin');
-    }
     else {
         header('Location: /login');
     }

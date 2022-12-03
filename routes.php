@@ -17,8 +17,11 @@ get('/', 'index.php');
 
 // LOG IN
 get('/login', 'public/login/login.php');
+get('/login-admin', 'public/login/login_admin.php');
 // LOGGED IN HOMEPAGE
 post('/login', 'private/login.php');
+post('/login-admin', 'public/admin/apis/login.php');
+
 get('/userlogin', 'public/pinterest/views/index.php');
 
 
@@ -30,7 +33,7 @@ get('/logout', 'private/logout.php');
 
 
 // ADMIN
-get('/admin', 'public/admin/admin.php');
+get('/admin', 'public/admin/views/admin.php');
 
 
 
