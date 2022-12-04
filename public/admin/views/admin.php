@@ -30,9 +30,9 @@
                     <img src="./public/static/assets/users.png" alt="">
                     <p>All users</p> 
                 </a>
-                <a class="nav-button-wrapper">
+                <a href="/admin-logout" class="nav-button-wrapper">
                     <img src="./public/static/assets/logout.png" alt="">
-                    <p>Logout</p> 
+                    <p>Logout</p>
                 </a>
             </div>
         </div>
@@ -55,7 +55,7 @@
                             <td><?php echo $user[0]; ?></td>
                             <td><?php echo $user[4]; ?></td>
                             <td><?php echo $user[6] ?></td>
-                            <th>Delete</th>
+                            <th><a href=""></a>Delete</th>
                         </tr>
                         <?php } ?>
                     </tbody>

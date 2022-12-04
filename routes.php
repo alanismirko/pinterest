@@ -29,6 +29,7 @@ get('/userlogin', 'public/pinterest/views/index.php');
 
 // LOG OUT 
 get('/logout', 'private/logout.php');
+get('/admin-logout', 'public/admin/apis/logout.php');
 
 
 

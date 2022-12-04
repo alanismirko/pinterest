@@ -11,8 +11,7 @@ class Users extends DbConnection{
         $sql = "SELECT * FROM users";
         $query = $this->connection->query($sql);
 
-        $rows = $query->fetch_all();
-        $users_encoded = json_encode($rows,true);
-        return $rows;
+        $all_users = $query->fetch_all();
+        return $all_users;
     }
 }
