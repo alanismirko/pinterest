@@ -4,9 +4,21 @@
         header('location: /login-admin');
 
     }
+
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
 ?>
+
+<?php
+    include_once('./././private/admin/get_all_users.php');
+    $users = new Users();
+    $all_users = $users->get_users();
+?>
+
 <?php require_once('./././private/initialize.php'); ?>
 <?php include(SHARED_PATH . '/header.php'); ?>
+
 
 <div class="admin-wrapper">
     <div class="workspace-wrapper">
@@ -34,12 +46,18 @@
                         <tr>
                             <th>User id</th>
                             <th>Email</th>
-                            <th>First name</th>
-                            <th>Last name</th>
                             <th>Date of birth</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach($all_users as $user){ ?>
+                        <tr>
+                            <td><?php echo $user[0]; ?></td>
+                            <td><?php echo $user[4]; ?></td>
+                            <td><?php echo $user[6] ?></td>
+                            <th>Delete</th>
+                        </tr>
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>

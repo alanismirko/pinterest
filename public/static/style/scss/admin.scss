@@ -34,7 +34,8 @@
         .nav-button-wrapper{
             @extend .row-flex-nav;
             gap: $spacing-sm;
-            padding-top: $spacing-lg;
+            margin-top: $spacing-md;
+            padding-left: $spacing-md;
             img{
                 width: 24px;
             }
@@ -42,14 +43,37 @@
         .nav-button-wrapper:hover{
             border-radius: $round-md;
             background-color: $color-text-hover;
+            padding-top: $spacing-md;
         }
     }
 }
 
 .users-wrapper{
+    width: 100%;
+    margin-right: $spacing-md;
+
+    h2{
+        margin-top: $spacing-xl;
+        padding-bottom: $spacing-xl;
+        border-bottom: 1px solid $color-grey-light;
+        text-align: left;
+    }
     .table-wrapper{
+        margin-top: $spacing-md;
         table{
             overflow: auto;
+            border-collapse: collapse;
+            min-width: 400px;
+            background-color: $color-white;
+            border-radius: $round-md;
+            color: $color-grey-dark;
+
+            thead{
+                border-bottom: 1px solid $color-grey-light;
+                margin: 0px $spacing-sm;
+            }
         }
+
+
     }
 }
