@@ -11,9 +11,10 @@
 ?>
 
 <?php
-    include_once('./././private/admin/get_all_users.php');
+    include_once('./././private/admin/users.php');
     $users = new Users();
     $all_users = $users->get_users();
+
 ?>
 
 <?php require_once('./././private/initialize.php'); ?>
@@ -55,7 +56,8 @@
                             <td><?php echo $user[0]; ?></td>
                             <td><?php echo $user[4]; ?></td>
                             <td><?php echo $user[6] ?></td>
-                            <th><a href=""></a>Delete</th>
+                            <?php $user['user_id']= $user[0]; ?>
+                            <th id="delete"><a href="/delete-user/user_id/<?= $user['user_id']; ?>" >Delete</a></th>
                         </tr>
                         <?php } ?>
                     </tbody>

@@ -72,6 +72,14 @@
                 border-bottom: 1px solid $color-grey-light;
                 margin: 0px $spacing-sm;
             }
+
+            tbody{
+                #delete{
+                    cursor: pointer;
+                }
+            }
+
+
         }
 
 

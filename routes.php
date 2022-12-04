@@ -49,6 +49,8 @@ post('/signup', 'private/signup.php');
 // USER PROFILE
 get('/$user_nickname', 'public/pinterest/views/profile.php');
 
+// DELETE USER
+get('/delete-user/user_id/$user_id', 'public/admin/apis/delete_user.php');
 
 
 

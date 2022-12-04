@@ -14,4 +14,15 @@ class Users extends DbConnection{
         $all_users = $query->fetch_all();
         return $all_users;
     }
+
+    public function delete_user($user_id){
+        $sql = "DELETE FROM users WHERE user_id = '$user_id'";
+        $query = $this->connection->query($sql);
+
+        if($query){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
