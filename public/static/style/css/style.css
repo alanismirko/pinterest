@@ -257,6 +257,56 @@ nav .dropdown-wrapper .dropdownFlex {
   color: blue;
 }
 
+.admin-wrapper, .workspace-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin: 1rem;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.admin-wrapper {
+  background-color: #DBDBDC;
+  padding: 1rem;
+}
+
+.workspace-wrapper {
+  background-color: #F9F9F9;
+}
+
+.nav-wrapper {
+  width: 260px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 1rem;
+  border: 1px solid #EFF0F6;
+  filter: drop-shadow(0px 5.63889px 22.5556px rgba(0, 0, 0, 0.05));
+}
+.nav-wrapper .navigation {
+  margin-top: 1rem;
+}
+.nav-wrapper .navigation .nav-button-wrapper {
+  gap: 0.5rem;
+  padding-top: 1.5rem;
+}
+.nav-wrapper .navigation .nav-button-wrapper img {
+  width: 24px;
+}
+.nav-wrapper .navigation .nav-button-wrapper:hover {
+  border-radius: 20px;
+  background-color: #E9E9E9;
+}
+
+.users-wrapper .table-wrapper table {
+  overflow: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -285,7 +335,7 @@ html, body {
   flex-direction: column;
 }
 
-.row-flex-nav, nav, nav form, nav .dropdown-wrapper, nav .dropdown-wrapper #dropdownModal .profile-link-wrapper {
+.row-flex-nav, nav, nav form, nav .dropdown-wrapper, nav .dropdown-wrapper #dropdownModal .profile-link-wrapper, .nav-wrapper .navigation .nav-button-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;

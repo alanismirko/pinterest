@@ -11,7 +11,6 @@
         $login->check_login($email, $password);
         $_SESSION['user'] = 'admin';
         header('location:/admin');
-        
     }
     else{
         header('location:/login-admin');

@@ -1,0 +1,55 @@
+.admin-wrapper, .workspace-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: $spacing-lg;
+    margin: $spacing-md;
+    backdrop-filter: blur(10px);
+    border-radius: $round-md;
+    position: fixed;
+	top:0px;
+	bottom: 0px;
+	left:0px;
+	right:0px;
+}
+
+.admin-wrapper{
+    background-color: $color-admin;
+    padding: $spacing-md;
+}
+
+.workspace-wrapper{
+    background-color: #F9F9F9;
+}
+
+.nav-wrapper{
+    width: 260px;
+    background-color: $color-white;
+    border-radius: $round-md;
+    padding: $spacing-md;
+    border: 1px solid #EFF0F6;
+    filter: drop-shadow(0px 5.63889px 22.5556px rgba(0, 0, 0, 0.05));
+
+    .navigation{
+        margin-top: $spacing-md;
+        .nav-button-wrapper{
+            @extend .row-flex-nav;
+            gap: $spacing-sm;
+            padding-top: $spacing-lg;
+            img{
+                width: 24px;
+            }
+        }
+        .nav-button-wrapper:hover{
+            border-radius: $round-md;
+            background-color: $color-text-hover;
+        }
+    }
+}
+
+.users-wrapper{
+    .table-wrapper{
+        table{
+            overflow: auto;
+        }
+    }
+}
