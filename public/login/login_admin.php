@@ -5,7 +5,6 @@
 <?php include(SHARED_PATH . '/header.php'); ?>
 
 
-
 <div id="login">
     <h1>Admin login</h1>
 

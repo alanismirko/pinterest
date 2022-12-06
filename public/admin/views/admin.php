@@ -1,13 +1,11 @@
 <?php
     session_start();
-    if (!isset($_SESSION['user']) ||(trim ($_SESSION['user']) == '')){
-        header('location: /login-admin');
+    if(!isset($_SESSION['user']) ||(trim ($_SESSION['user']) == '')){
+        header('location:/login-admin');
 
     }
 
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
+
 ?>
 
 <?php
