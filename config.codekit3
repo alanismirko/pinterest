@@ -33,12 +33,28 @@
       "oAP" : "\/index.php",
       "oF" : 0
     },
+    "\/private\/create-post.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/private\/create-post.php",
+      "oF" : 0
+    },
     "\/private\/db.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/private\/db.php",
+      "oF" : 0
+    },
+    "\/private\/delete-profile.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/private\/delete-profile.php",
       "oF" : 0
     },
     "\/private\/initialize.php" : {
@@ -73,6 +89,14 @@
       "oAP" : "\/private\/signup.php",
       "oF" : 0
     },
+    "\/private\/update-profile.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/private\/update-profile.php",
+      "oF" : 0
+    },
     "\/public\/admin\/views\/admin.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -105,6 +129,17 @@
       "oAP" : "\/public\/pinterest\/apis\/index.php",
       "oF" : 0
     },
+    "\/public\/pinterest\/js\/script-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/public\/pinterest\/js\/script-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/public\/pinterest\/js\/script.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -124,12 +159,28 @@
       "oAP" : "\/public\/pinterest\/views\/index.php",
       "oF" : 0
     },
+    "\/public\/pinterest\/views\/post.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/pinterest\/views\/post.php",
+      "oF" : 0
+    },
     "\/public\/pinterest\/views\/profile.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/public\/pinterest\/views\/profile.php",
+      "oF" : 0
+    },
+    "\/public\/pinterest\/views\/settings.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/pinterest\/views\/settings.php",
       "oF" : 0
     },
     "\/public\/static\/assets\/background-login.png" : {
@@ -289,14 +340,6 @@
       "oAP" : "\/public\/static\/shared\/header.php",
       "oF" : 0
     },
-    "\/public\/static\/style\/css\/.css" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/static\/style\/css\/.css",
-      "oF" : 0
-    },
     "\/public\/static\/style\/css\/style-min.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -374,6 +417,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/public\/static\/style\/scss\/post.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/static\/style\/scss\/post.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/public\/static\/style\/scss\/profile.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -388,6 +446,18 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/public\/static\/style\/scss\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/static\/style\/scss\/.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/public\/static\/style\/scss\/style.scss" : {
       "aP" : 0,

@@ -18,11 +18,13 @@ get('/', 'index.php');
 // LOG IN
 get('/login', 'public/login/login.php');
 get('/login-admin', 'public/login/login_admin.php');
+
 // LOGGED IN HOMEPAGE
 post('/login', 'private/login.php');
 post('/login-admin', 'public/admin/apis/login.php');
 
 get('/userlogin', 'public/pinterest/views/index.php');
+
 
 
 
@@ -38,7 +40,6 @@ get('/admin', 'public/admin/views/admin.php');
 
 
 
-
 // SIGN UP
 get('/signup', 'public/login/signup.php');
 post('/signup', 'private/signup.php');
@@ -46,49 +47,41 @@ post('/signup', 'private/signup.php');
 
 
 
-// USER PROFILE
-get('/$user_nickname', 'public/pinterest/views/profile.php');
+
 
 // DELETE USER
 get('/delete-user/user_id/$user_id', 'public/admin/apis/delete_user.php');
 
 
-
-// Dynamic GET. Example with 1 variable
-// The $id will be available in user.php
-get('/user/$id', 'views/user');
-
-
-
-// Dynamic GET. Example with 2 variables
-// The $name will be available in full_name.php
-// The $last_name will be available in full_name.php
-// In the browser point to: localhost/user/X/Y
-get('/user/$name/$last_name', 'views/full_name.php');
+// CREATE POST - had to put it above user-profile
+get('/pin-builder', 'public/pinterest/views/post.php');
+post('/create-post', 'private/create-post.php');
 
 
 
 
-// Dynamic GET. Example with 2 variables with static
-// In the URL -> http://localhost/product/shoes/color/blue
-// The $type will be available in product.php
-// The $color will be available in product.php
-get('/product/$type/color/$color', 'product.php');
+
+// USER PROFILE
+get('/$user_nickname', 'public/pinterest/views/profile.php');
+get('/pin-builder', 'public/pinterest/views/post.php');
+
+
+
+// UPDATE PROFILE
+get('/$user_nickname/edit-profile', 'public/pinterest/views/settings.php');
+post('/update-profile', 'private/update-profile.php');
+
+
+// DELETE PROFILE
+get('/$user_nickname/account-settings', 'public/pinterest/views/settings.php');
+post('/delete-profile', 'private/delete-profile.php');
 
 
 
 
-// A route with a callback
-get('/callback', function(){
-  echo 'Callback executed';
-});
 
-// A route with a callback passing a variable
-// To run this route, in the browser type:
-// http://localhost/user/A
-get('/callback/$name', function($name){
-  echo "Callback executed. The name is $name";
-});
+
+
 
 
 
@@ -111,4 +104,4 @@ get('/callback/$name/$last_name', function($name, $last_name){
 // For GET or POST
 // The 404.php which is inside the views folder will be called
 // The 404.php has access to $_GET and $_POST
-any('/404','views/404.php');
+any('/404','public/pinterest/views/404.php');

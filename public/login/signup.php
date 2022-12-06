@@ -6,21 +6,35 @@
     <h1>Sign up to <br> get your <br> ideas</h1>
 
     <div class="info-wrapper">
-    <img src="./public/static/assets/logo.svg">
+        <img src="./public/static/assets/logo.svg">
         <h2>Welcome to Pinterest</h2>
         <p>Find new ideas to try</p>
 
-        <form action="/signup" method="POST">
-            <label for="email">Email</label>
-            <input type="text" name="email" placeholder="Email">
+        <form action="/signup" method="POST" data-steps="1">
+            <div class="signup-part1">
+                <label for="user_email">Email</label>
+                <input type="text" name="user_email" placeholder="Email">
 
-            <label for="password">Password</label>
-            <input type="password" name="password" placeholder="Create a password">
+                <label for="user_password">Password</label>
+                <input type="password" name="user_password" placeholder="Create a password">
 
-            <label for="age">Age</label>
-            <input type="date" name="age" placeholder="Age">
+                <label for="date_of_birth">Date of birth</label>
+                <input type="date" name="user_dateofbirth">
 
-            <input type="submit" value="Continue">
+                <button type="button">Continue</button>
+            </div>
+            <div class="signup-part2" >
+                <label for="user_firstname">First Name</label>
+                <input type="text" name="user_firstname" placeholder="First Name">
+
+                <label for="user_lastname">Last Name</label>
+                <input type="text" name="user_lastname" placeholder="Last Name">
+
+                <label for="user_nickname">Username</label>
+                <input type="text" name="user_nickname" placeholder="Username">
+
+                <input type="submit" value="Sign up">
+            </div>
         </form>
 
         <p class="terms">By continuing, you agree to Pinterest's <br>
