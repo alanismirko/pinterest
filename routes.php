@@ -17,16 +17,26 @@ get('/', 'index.php');
 
 // LOG IN
 get('/login', 'public/login/login.php');
+get('/login-admin', 'public/login/login_admin.php');
+
+// LOGGED IN HOMEPAGE
+post('/login', 'private/login.php');
+post('/login-admin', 'public/admin/apis/login.php');
+
+get('/userlogin', 'public/pinterest/views/index.php');
+
+
 
 
 
 // LOG OUT 
 get('/logout', 'private/logout.php');
+get('/admin-logout', 'public/admin/apis/logout.php');
 
 
 
 // ADMIN
-get('/admin', 'public/admin/admin.php');
+get('/admin', 'public/admin/views/admin.php');
 
 
 
@@ -36,11 +46,11 @@ post('/signup', 'private/signup.php');
 
 
 
-// LOGGED IN HOMEPAGE
-post('/login', 'private/login.php');
-get('/userlogin', 'public/pinterest/views/index.php');
 
 
+
+// DELETE USER
+get('/delete-user/user_id/$user_id', 'public/admin/apis/delete_user.php');
 
 
 // CREATE POST - had to put it above user-profile

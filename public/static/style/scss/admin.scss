@@ -1,0 +1,87 @@
+.admin-wrapper, .workspace-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: $spacing-lg;
+    margin: $spacing-md;
+    backdrop-filter: blur(10px);
+    border-radius: $round-md;
+    position: fixed;
+	top:0px;
+	bottom: 0px;
+	left:0px;
+	right:0px;
+}
+
+.admin-wrapper{
+    background-color: $color-admin;
+    padding: $spacing-md;
+}
+
+.workspace-wrapper{
+    background-color: #F9F9F9;
+}
+
+.nav-wrapper{
+    width: 260px;
+    background-color: $color-white;
+    border-radius: $round-md;
+    padding: $spacing-md;
+    border: 1px solid #EFF0F6;
+    filter: drop-shadow(0px 5.63889px 22.5556px rgba(0, 0, 0, 0.05));
+
+    .navigation{
+        margin-top: $spacing-md;
+        .nav-button-wrapper{
+            @extend .row-flex-nav;
+            gap: $spacing-sm;
+            margin-top: $spacing-md;
+            padding-left: $spacing-md;
+            img{
+                width: 24px;
+            }
+        }
+        .nav-button-wrapper:hover{
+            border-radius: $round-md;
+            background-color: $color-text-hover;
+            padding-top: $spacing-md;
+        }
+    }
+}
+
+.users-wrapper{
+    width: 100%;
+    margin-right: $spacing-md;
+
+    h2{
+        margin-top: $spacing-xl;
+        padding-bottom: $spacing-xl;
+        border-bottom: 1px solid $color-grey-light;
+        text-align: left;
+    }
+    .table-wrapper{
+        margin-top: $spacing-md;
+        table{
+            overflow: auto;
+            border-collapse: collapse;
+            min-width: 400px;
+            background-color: $color-white;
+            border-radius: $round-md;
+            color: $color-grey-dark;
+
+            thead{
+                border-bottom: 1px solid $color-grey-light;
+                margin: 0px $spacing-sm;
+            }
+
+            tbody{
+                #delete{
+                    cursor: pointer;
+                }
+            }
+
+
+        }
+
+
+    }
+}

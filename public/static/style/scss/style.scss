@@ -4,7 +4,9 @@
 @import "pinterest";
 @import "nav";
 @import "profile";
+@import "admin";
 @import "post";
+
 
 // *********************
 // LAYOUT
@@ -55,6 +57,8 @@ html,body{
     flex-direction: row;
     align-items: center;
 }
+
+
 
 .row-flex{
     display: flex;
