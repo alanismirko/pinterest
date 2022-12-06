@@ -1,41 +1,39 @@
 // *********************
 // FONT
 // *********************
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-$font-main: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+$font-main: "Roboto", sans-serif;
 
-    // FONT WEIGHT
-    $font-400: 400;
-    $font-500: 500;
-    $font-600: 600;
-    $font-700: 700;
-    $font-800: 800;
+// FONT WEIGHT
+$font-400: 400;
+$font-500: 500;
+$font-600: 600;
+$font-700: 700;
+$font-800: 800;
 
 // *********************
 // COLOR
 // *********************
-$color-red: #F90000;
+$color-red: #f90000;
 $color-black: #111111;
-$color-white: #FFFFFF;
-$color-text: #1C1C1C;
-$color-text-hover: #E9E9E9;
-$color-grey-dark: #4F4F4F;
-$color-grey-light: #C6C6C6;
-$color-input: #a5a5a5;
-$color-search: #EFEFEF;
-
+$color-white: #ffffff;
+$color-text: #1c1c1c;
+$color-text-hover: #e9e9e9;
+$color-grey-dark: #4f4f4f;
+$color-grey-light: #c6c6c6;
+$color-input: #CDCDCD;
+$color-search: #efefef;
 
 // *********************
 // SPACING
 // *********************
-$spacing-xs: .3rem;
-$spacing-sm: .5rem;
+$spacing-xs: 0.3rem;
+$spacing-sm: 0.5rem;
 $spacing-md: 1rem;
 $spacing-lg: 1.5rem;
 $spacing-xl: 2rem;
 $spacing-xxl: 3rem;
-$spacing-xxxl: 8rem;
-
+$spacing-xxxl: 6rem;
 
 // *********************
 // WIDTH
@@ -51,6 +49,7 @@ $width-lg: 80%;
 // RADIUS
 // *********************
 $round-full: 50%;
+$round-lg: 50px;
 $round-md: 20px;
 $round-xs: 13px;
 
@@ -64,7 +63,6 @@ $card_small: 26;
 $card_med: 33;
 $card_large: 45;
 
-
 // *********************
 // BREAKPOINTS
 // *********************
@@ -73,5 +71,5 @@ $breakPoints: (
     md: 480px,
     lg: 768px,
     xl: 1032px,
-    xxl: 1370px
+    xxl: 1370px,
 );

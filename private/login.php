@@ -27,6 +27,7 @@ try{
         $query_session->bindValue(':session_created_at', $current_date);
         $query_session->execute();
         setcookie('login', $session_id, time() + 60*60*24*30, '/');
+        setcookie('user_email', $email);
         header('Location: /userlogin');
     }
     elseif($email == "admin@admin.com" and $password_form == "admin123" ){
