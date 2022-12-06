@@ -4,7 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 #login, #signup {
   background-image: url("../../assets/background-login.png");
   height: 100vh;
@@ -100,6 +99,8 @@ li {
 
 .image-list-wrapper {
   margin: 0px 50px 0px 50px;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
   column-count: 4;
   margin-top: 65px;
   margin-bottom: 1.5rem;
@@ -113,6 +114,8 @@ li {
   margin: 15px 10px;
   border-radius: var(--card_border_radius);
   transition: opacity 0.4s ease-in-out;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
   break-inside: avoid;
 }
 .image-list-wrapper .image-container .card p {
@@ -261,6 +264,8 @@ nav .dropdown-wrapper .dropdownFlex {
 .profile-edit-wrapper .category-edit ul li {
   margin-top: 1rem;
   padding: 0.3rem 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .profile-edit-wrapper .category-edit ul li:nth-of-type(1) {
@@ -273,10 +278,18 @@ nav .dropdown-wrapper .dropdownFlex {
   margin-top: 1.5rem;
   justify-content: unset !important;
 }
+.profile-edit-wrapper .profile-edit form input::-webkit-input-placeholder {
+  color: #1c1c1c;
+}
+.profile-edit-wrapper .profile-edit form input::-moz-placeholder {
+  color: #1c1c1c;
+}
 .profile-edit-wrapper .profile-edit form input::placeholder {
   color: #1c1c1c;
 }
 .profile-edit-wrapper .profile-edit form input[type=submit] {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-top: 2rem;
 }
@@ -291,19 +304,6 @@ nav .dropdown-wrapper .dropdownFlex {
 .profile-edit-wrapper .profile-edit.account-settings form input[type=submit] {
   background-color: #efefef;
   color: #1c1c1c;
-}
-
-.post-container {
-  margin-top: 6rem;
-  background-color: #efefef;
-}
-
-.post-wrapper {
-  background-color: #ffffff;
-  border-radius: 20px;
-  width: 50%;
-  margin: auto;
-  min-height: 80vh;
 }
 
 * {
@@ -398,5 +398,3 @@ button, [class*=wrapper] form input[type=submit], .profile-edit-wrapper .profile
   border: none;
   cursor: pointer;
 }
-
-/*# sourceMappingURL=style.css.map */

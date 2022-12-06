@@ -46,7 +46,7 @@ $user_letter = ucfirst(substr($user_nickname, 0, 1));
         </form>
 
         <div class="dropdown-wrapper">
-            <a href="#">
+            <a href="/pin-builder">
                 <img class="round" src="/public/static/assets/create.svg" alt="">
             </a>
 

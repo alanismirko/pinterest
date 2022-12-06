@@ -1,0 +1,15 @@
+@import "var";
+
+.post-container {
+    margin-top: $spacing-xxxl;
+    background-color: $color-search;
+}
+
+
+.post-wrapper {
+    background-color: $color-white;
+    border-radius:$round-md;
+    width:$width-half;
+    margin: auto;
+    min-height: 80vh;
+}
