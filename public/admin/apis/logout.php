@@ -9,7 +9,7 @@
             try{
                 $logout->logout($session_id);
             }catch(PDOException $ex){
-                echo $ex;
+                print_r($ex) ;
             }
             unset($_COOKIE['login_admin']); 
             setcookie("login_admin", "", time()-3600);
@@ -19,7 +19,7 @@
         }
         
     }catch(Exception $ex){
-        echo $ex;
+        print_r($ex);
     }
 
 

@@ -13,7 +13,7 @@
             $this->connection = new PDO("mysql:host=$this->host;dbname=$this->database",$this->username,$this->password);
             $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             if(!$this->connection){
-                echo 'Could not connect to database server';
+                print_r('Could not connect to database server');
                 exit;
             }    
         }

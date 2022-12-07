@@ -47,9 +47,9 @@ header("location: /login-admin");
                     <tbody>
                         <?php foreach($all_users as $user){ ?>
                         <tr>
-                            <td><?php echo $user[0]; ?></td>
-                            <td><?php echo $user[4]; ?></td>
-                            <td><?php echo $user[6] ?></td>
+                            <td><?php out($user[0]); ?></td>
+                            <td><?php out( $user[4]); ?></td>
+                            <td><?php out( $user[6]); ?></td>
                             <?php $user['user_id']= $user[0]; ?>
                             <th id="delete"><a href="/delete-user/user_id/<?= $user['user_id']; ?>" >Delete</a></th>
                         </tr>
