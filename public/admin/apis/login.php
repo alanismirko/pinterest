@@ -15,7 +15,7 @@
             header('location:/login-admin');
         }
         else{
-            setcookie('login', $session_id, time() + 60*60*24*30, '/');
+            setcookie('login_admin', $session_id, time() + 60*60*24*30, '/');
             header('location:/admin');
         }
     }

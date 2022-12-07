@@ -4,15 +4,15 @@
     $logout = new Logout();
 
     try{
-        if (isset($_COOKIE['login'])) {
-            $session_id = $_COOKIE['login'];
+        if (isset($_COOKIE['login_admin'])) {
+            $session_id = $_COOKIE['login_admin'];
             try{
                 $logout->logout($session_id);
             }catch(PDOException $ex){
                 echo $ex;
             }
-            unset($_COOKIE['login']); 
-            setcookie("login", "", time()-3600);
+            unset($_COOKIE['login_admin']); 
+            setcookie("login_admin", "", time()-3600);
             header("location: /login-admin"); 
         } else {
             header('Location: /admin');
