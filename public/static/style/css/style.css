@@ -19,7 +19,7 @@
 }
 
 #admin-wrapper {
-  height: 360px;
+  height: 422px;
 }
 
 #login form {
@@ -29,7 +29,7 @@
 .info-wrapper {
   width: 484px;
   height: 692px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   padding: 2rem 3rem 3rem;
   border-radius: 20px;
 }
@@ -62,13 +62,13 @@
 }
 
 h1 {
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 70px;
   font-weight: 700;
 }
 
 h2 {
-  color: #4f4f4f;
+  color: #4F4F4F;
   font-weight: 600;
   font-size: 26px;
   text-align: center;
@@ -82,13 +82,13 @@ h3 {
 }
 
 h6, .profile-edit-wrapper .category-edit ul li {
-  color: #1c1c1c;
+  color: #1C1C1C;
   font-size: 18px;
   font-weight: 500;
 }
 
 p {
-  color: #4f4f4f;
+  color: #4F4F4F;
   font-weight: 100;
 }
 
@@ -132,7 +132,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #ffffff;
+  background: #FFFFFF;
 }
 nav .logo-round {
   width: 30px;
@@ -143,7 +143,7 @@ nav form, nav .profile-edit-wrapper .profile-edit form, .profile-edit-wrapper .p
   padding-left: 1rem;
   height: 45px;
   border-radius: 50px;
-  background-color: #efefef;
+  background-color: #EFEFEF;
   width: 90%;
 }
 nav form img, nav .profile-edit-wrapper .profile-edit form img, .profile-edit-wrapper .profile-edit nav form img {
@@ -151,9 +151,9 @@ nav form img, nav .profile-edit-wrapper .profile-edit form img, .profile-edit-wr
 }
 nav form input, nav .profile-edit-wrapper .profile-edit form input, .profile-edit-wrapper .profile-edit nav form input {
   border: none;
-  color: #4f4f4f;
+  color: #4F4F4F;
   font-size: 16px;
-  background-color: #efefef;
+  background-color: #EFEFEF;
   width: 80%;
   padding-left: 0.5rem;
 }
@@ -184,7 +184,7 @@ nav .dropdown-wrapper #dropdownModal .profile-link-wrapper p {
 }
 nav .dropdown-wrapper #dropdownModal .profile-link-wrapper .userLetter {
   border-radius: 50%;
-  background-color: #c6c6c6;
+  background-color: #C6C6C6;
   height: 50px;
   width: 50px;
   margin: 0px;
@@ -206,7 +206,7 @@ nav .dropdown-wrapper #dropdownModal a {
   padding: 0.5rem;
 }
 nav .dropdown-wrapper #dropdownModal a:hover, nav .dropdown-wrapper #dropdownModal .profile-link-wrapper:hover {
-  background-color: #c6c6c6;
+  background-color: #C6C6C6;
   border-radius: 6px;
 }
 nav .dropdown-wrapper .dropdownFlex {
@@ -214,7 +214,7 @@ nav .dropdown-wrapper .dropdownFlex {
   flex-direction: column;
   justify-content: center;
   width: 260px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-radius: 20px;
   margin-left: -217px;
   margin-top: 14px;
@@ -227,7 +227,7 @@ nav .dropdown-wrapper .dropdownFlex {
 
 .profile-header-wrapper .userLetter {
   border-radius: 50%;
-  background-color: #c6c6c6;
+  background-color: #C6C6C6;
   height: 120px;
   width: 120px;
   margin: 0px;
@@ -247,7 +247,7 @@ nav .dropdown-wrapper .dropdownFlex {
   color: #111111;
 }
 .profile-header-wrapper .user-info-wrapper p:nth-of-type(1) {
-  color: #CDCDCD;
+  color: #a5a5a5;
 }
 .profile-header-wrapper .user-info-wrapper button, .profile-header-wrapper .user-info-wrapper [class*=wrapper] form input[type=submit], [class*=wrapper] form .profile-header-wrapper .user-info-wrapper input[type=submit], .profile-header-wrapper .user-info-wrapper .profile-edit-wrapper .profile-edit.account-settings form input[type=submit], .profile-edit-wrapper .profile-edit.account-settings form .profile-header-wrapper .user-info-wrapper input[type=submit] {
   margin-top: 1rem;
@@ -278,7 +278,7 @@ nav .dropdown-wrapper .dropdownFlex {
   justify-content: unset !important;
 }
 .profile-edit-wrapper .profile-edit form input::placeholder {
-  color: #1c1c1c;
+  color: #1C1C1C;
 }
 .profile-edit-wrapper .profile-edit form input[type=submit] {
   max-width: fit-content;
@@ -290,24 +290,11 @@ nav .dropdown-wrapper .dropdownFlex {
   grid-gap: 0.5rem;
 }
 .profile-edit-wrapper .profile-edit .terms {
-  color: #c6c6c6;
+  color: #C6C6C6;
 }
 .profile-edit-wrapper .profile-edit.account-settings form input[type=submit] {
-  background-color: #efefef;
-  color: #1c1c1c;
-}
-
-.post-container {
-  margin-top: 6rem;
-  background-color: #efefef;
-}
-
-.post-wrapper {
-  background-color: #ffffff;
-  border-radius: 20px;
-  width: 50%;
-  margin: auto;
-  min-height: 80vh;
+  background-color: #EFEFEF;
+  color: #1C1C1C;
 }
 
 .admin-wrapper, .workspace-wrapper {
@@ -341,6 +328,12 @@ nav .dropdown-wrapper .dropdownFlex {
   border: 1px solid #EFF0F6;
   filter: drop-shadow(0px 5.63889px 22.5556px rgba(0, 0, 0, 0.05));
 }
+.nav-wrapper #logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+}
 .nav-wrapper .navigation {
   margin-top: 1rem;
 }
@@ -352,11 +345,6 @@ nav .dropdown-wrapper .dropdownFlex {
 .nav-wrapper .navigation .nav-button-wrapper img {
   width: 24px;
 }
-.nav-wrapper .navigation .nav-button-wrapper:hover {
-  border-radius: 20px;
-  background-color: #E9E9E9;
-  padding-top: 1rem;
-}
 
 .users-wrapper {
   width: 100%;
@@ -365,7 +353,6 @@ nav .dropdown-wrapper .dropdownFlex {
 .users-wrapper h2 {
   margin-top: 2rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #C6C6C6;
   text-align: left;
 }
 .users-wrapper .table-wrapper {
@@ -374,17 +361,43 @@ nav .dropdown-wrapper .dropdownFlex {
 .users-wrapper .table-wrapper table {
   overflow: auto;
   border-collapse: collapse;
-  min-width: 400px;
+  width: 100%;
   background-color: #FFFFFF;
   border-radius: 20px;
   color: #4F4F4F;
 }
 .users-wrapper .table-wrapper table thead {
-  border-bottom: 1px solid #C6C6C6;
   margin: 0px 0.5rem;
+  pointer-events: none;
 }
-.users-wrapper .table-wrapper table tbody #delete {
+.users-wrapper .table-wrapper table th, .users-wrapper .table-wrapper table td {
+  padding: 0.5rem;
+  text-align: left;
+}
+.users-wrapper .table-wrapper table tr:hover {
+  border-radius: 20px;
+  background-color: #E9E9E9;
+}
+.users-wrapper .table-wrapper table tbody button, .users-wrapper .table-wrapper table tbody [class*=wrapper] form input[type=submit], [class*=wrapper] form .users-wrapper .table-wrapper table tbody input[type=submit], .users-wrapper .table-wrapper table tbody .profile-edit-wrapper .profile-edit.account-settings form input[type=submit], .profile-edit-wrapper .profile-edit.account-settings form .users-wrapper .table-wrapper table tbody input[type=submit] {
+  background-color: #f90000;
+  margin-top: 0px;
   cursor: pointer;
+}
+.users-wrapper .table-wrapper table tbody button a, .users-wrapper .table-wrapper table tbody [class*=wrapper] form input[type=submit] a, [class*=wrapper] form .users-wrapper .table-wrapper table tbody input[type=submit] a, .users-wrapper .table-wrapper table tbody .profile-edit-wrapper .profile-edit.account-settings form input[type=submit] a, .profile-edit-wrapper .profile-edit.account-settings form .users-wrapper .table-wrapper table tbody input[type=submit] a {
+  color: #FFFFFF;
+}
+
+.post-container {
+  margin-top: 6rem;
+  background-color: #EFEFEF;
+}
+
+.post-wrapper {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  width: 50%;
+  margin: auto;
+  min-height: 80vh;
 }
 
 * {
@@ -419,7 +432,7 @@ html, body {
   flex-direction: column;
 }
 
-.row-flex-nav, nav, nav form, nav .dropdown-wrapper, nav .dropdown-wrapper #dropdownModal .profile-link-wrapper, nav .profile-edit-wrapper .profile-edit form, .profile-edit-wrapper .profile-edit nav form {
+.row-flex-nav, nav, nav form, nav .dropdown-wrapper, nav .dropdown-wrapper #dropdownModal .profile-link-wrapper, nav .profile-edit-wrapper .profile-edit form, .profile-edit-wrapper .profile-edit nav form, .nav-wrapper .navigation .nav-button-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -436,8 +449,8 @@ html, body {
 button, [class*=wrapper] form input[type=submit], .profile-edit-wrapper .profile-edit.account-settings form input[type=submit] {
   min-width: 60px;
   margin-top: 2rem;
-  background-color: #efefef;
-  color: #1c1c1c;
+  background-color: #EFEFEF;
+  color: #1C1C1C;
   cursor: pointer;
   padding: 1rem 1.5rem;
   border: none;
@@ -454,14 +467,14 @@ button, [class*=wrapper] form input[type=submit], .profile-edit-wrapper .profile
   width: 100%;
 }
 [class*=wrapper] form label, [class*=wrapper] .profile-edit-wrapper .profile-edit form label, .profile-edit-wrapper .profile-edit [class*=wrapper] form label {
-  color: #4f4f4f;
+  color: #4F4F4F;
   text-align: left;
   font-weight: 400;
   font-size: 11px;
   padding: 1rem 0.3rem 0.3rem;
 }
 [class*=wrapper] form input, [class*=wrapper] .profile-edit-wrapper .profile-edit form input, .profile-edit-wrapper .profile-edit [class*=wrapper] form input {
-  border: 2px solid #CDCDCD;
+  border: 2px solid #a5a5a5;
   width: 100%;
   height: 48px;
   border-radius: 13px;
@@ -469,7 +482,7 @@ button, [class*=wrapper] form input[type=submit], .profile-edit-wrapper .profile
   margin-bottom: 0.5rem;
 }
 [class*=wrapper] form input[type=submit] {
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #f90000;
   border-radius: 50px;
   font-weight: 600;
