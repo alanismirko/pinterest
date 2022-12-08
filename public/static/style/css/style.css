@@ -224,6 +224,40 @@ nav .dropdown-wrapper .dropdownFlex {
 .profile-container {
   margin-top: 6rem;
 }
+.profile-container .image-list-wrapper .image-container {
+  column-count: 4;
+}
+.profile-container .image-list-wrapper .image-container .overlay-container {
+  position: relative;
+}
+.profile-container .image-list-wrapper .image-container .overlay-container .overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.353);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.profile-container .image-list-wrapper .image-container .overlay-container .overlay .icon-container {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  margin: 1.5rem;
+}
+.profile-container .image-list-wrapper .image-container .overlay-container .overlay .icon-container input {
+  border: none;
+  padding: 0;
+}
+.profile-container .image-list-wrapper .image-container img {
+  border-radius: 20px;
+}
+.profile-container .image-list-wrapper .image-container img:hover + div.overlay {
+  display: block;
+}
+.profile-container .image-list-wrapper .image-container .card:hover .overlay {
+  display: block;
+}
 
 .profile-header-wrapper .userLetter {
   border-radius: 50%;
@@ -377,6 +411,7 @@ nav .dropdown-wrapper .dropdownFlex {
 .post-container {
   margin-top: 6rem;
   background-color: #EFEFEF;
+  padding-top: 3rem;
 }
 
 .post-wrapper {
@@ -385,6 +420,17 @@ nav .dropdown-wrapper .dropdownFlex {
   width: 50%;
   margin: auto;
   min-height: 80vh;
+  padding: 3rem;
+}
+.post-wrapper h3 {
+  margin-bottom: 1.5rem;
+}
+.post-wrapper form input[type=file] {
+  height: fit-content;
+}
+.post-wrapper form input[type=submit] {
+  width: fit-content;
+  margin-top: 3rem !important;
 }
 
 * {
@@ -414,7 +460,7 @@ html, body {
   align-items: center;
 }
 
-.column-flex, [class*=wrapper] form, [class*=wrapper] .profile-edit-wrapper .profile-edit form, .profile-edit-wrapper .profile-edit [class*=wrapper] form, .image-list-wrapper .image-container .card, nav .dropdown-wrapper #dropdownModal .profile-link-wrapper .userLetter, .profile-header-wrapper .userLetter {
+.column-flex, [class*=wrapper] form, [class*=wrapper] .profile-edit-wrapper .profile-edit form, .profile-edit-wrapper .profile-edit [class*=wrapper] form, .image-list-wrapper .image-container .card, nav .dropdown-wrapper #dropdownModal .profile-link-wrapper .userLetter, .profile-container .image-list-wrapper .image-container .overlay-container, .profile-header-wrapper .userLetter {
   display: flex;
   flex-direction: column;
 }
@@ -460,13 +506,25 @@ button, [class*=wrapper] form input[type=submit], .profile-edit-wrapper .profile
   font-size: 11px;
   padding: 1rem 0.3rem 0.3rem;
 }
-[class*=wrapper] form input, [class*=wrapper] .profile-edit-wrapper .profile-edit form input, .profile-edit-wrapper .profile-edit [class*=wrapper] form input {
+[class*=wrapper] form input, [class*=wrapper] .profile-edit-wrapper .profile-edit form input, .profile-edit-wrapper .profile-edit [class*=wrapper] form input, [class*=wrapper] form textarea, [class*=wrapper] .profile-edit-wrapper .profile-edit form textarea, .profile-edit-wrapper .profile-edit [class*=wrapper] form textarea {
   border: 2px solid #a5a5a5;
   width: 100%;
   height: 48px;
   border-radius: 13px;
   padding: 0.5rem 1rem;
   margin-bottom: 0.5rem;
+}
+[class*=wrapper] form textarea, [class*=wrapper] .profile-edit-wrapper .profile-edit form textarea, .profile-edit-wrapper .profile-edit [class*=wrapper] form textarea {
+  resize: none;
+}
+[class*=wrapper] form textarea.input-lg {
+  font-size: 2.5rem;
+  font-family: "Roboto";
+  height: fit-content;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #a5a5a5;
 }
 [class*=wrapper] form input[type=submit] {
   color: #FFFFFF;

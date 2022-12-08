@@ -8,6 +8,21 @@ if (!isset($_COOKIE["login"]))
 ?>
 
 
-<h1>
+<h2>
     404 NOT FOUND
-</h1>
+</h2>
+<h2>
+    404 NOT FOUND
+</h2>
+<h2>
+    404 NOT FOUND
+</h2>
+<h2>
+    404 NOT FOUND
+</h2>
+<h2>
+    404 NOT FOUND
+</h2>
+<h2>
+    404 NOT FOUND
+</h2>

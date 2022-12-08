@@ -39,7 +39,7 @@ $user_letter = ucfirst(substr($user_nickname, 0, 1));
 
     <nav>
         <!-- <img class="logo-round" src="./public/static/assets/logo.svg" alt="Logo"> -->
-        <img class="logo-round" src="/public/static/assets/logo.svg" alt="Logo">
+        <a href="/userlogin"><img class="logo-round" src="/public/static/assets/logo.svg" alt="Logo"></a>
         <form action="">
             <img src="/public/static/assets/search_icon.svg" alt="">
             <input type="search" placeholder="Search">
@@ -57,14 +57,14 @@ $user_letter = ucfirst(substr($user_nickname, 0, 1));
 
                     <p>Currently in</p>
 
-                    <a href="/<?php echo $user_nickname?>">
+                    <a href="/<?php out($user_nickname)?>">
                     <div class="profile-link-wrapper">
-                            <p class="userLetter"><?php echo $user_letter ?></p>
+                            <p class="userLetter"><?php out($user_letter) ?></p>
                             <div class="user-info-wrapper">
-                                <p><strong><?php echo $user_fullname ?></strong></p>
-                                <p>@<?php echo $user_nickname ?></p>
+                                <p><strong><?php out($user_fullname) ?></strong></p>
+                                <p>@<?php out($user_nickname) ?></p>
                                 <p>Personal</p>
-                                <p><?php echo $user_email ?></p>
+                                <p><?php out($user_email) ?></p>
                             </div>
                     </div>
                     </a>

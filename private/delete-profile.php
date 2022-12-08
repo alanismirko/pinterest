@@ -9,7 +9,6 @@ try {
     $query_user->bindValue(':email', $user_email);
     $query_user->execute();
 
-    // header('Location: /' . $user_nickname . '/edit');
     header('Location: /logout');
 } catch (PDOException $ex) {
     echo $ex;

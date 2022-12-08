@@ -4,6 +4,7 @@ require_once('db.php');
 
 try {
     $user_email = $_COOKIE['user_email'];
+    $user_nickname = $_COOKIE['user_nickname'];
     $image_id = rand();
     $image_title = $_POST['title'];
     $created_at = date('Y-m-d h:i:s');
@@ -24,9 +25,7 @@ try {
     $query_image->bindValue(':created_at', $created_at);
     $query_image->execute();
 
-    header('Location: /userlogin');
-    // direct to user page
-
+    header('Location: /' . $user_nickname);
 
 } catch (PDOException $ex) {
     echo $ex;

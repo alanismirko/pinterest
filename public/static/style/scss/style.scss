@@ -98,13 +98,27 @@ form{
         padding: $spacing-md $spacing-xs $spacing-xs
     }
 
-    input{
+    input, textarea {
         border: 2px solid $color-input;
         width: 100%;
         height: 48px;
         border-radius: $round-xs;
         padding: $spacing-sm $spacing-md;
         margin-bottom: $spacing-sm;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    textarea.input-lg {
+        font-size: 2.5rem;
+        font-family: 'Roboto';
+        height: fit-content;
+        padding: $spacing-md 0;
+        border: none;
+        border-radius: 0;
+        border-bottom: 2px solid $color-input;
     }
 
     input[type=submit]{
