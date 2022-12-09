@@ -84,10 +84,7 @@ function route($route, $path_to_include)
     include_once __DIR__ . "/$path_to_include";
     exit();
 }
-function out($text)
-{
-    echo htmlspecialchars($text);
-}
+
 function set_csrf()
 {
     if (!isset($_SESSION["csrf"])) {

@@ -8,6 +8,8 @@
     <link rel="icon" href="https://s.pinimg.com/webapp/favicon-54a5b2af.png">
 
     <script src="/public/pinterest/js/script.js" defer></script>
+    <script src="/public/pinterest/js/validator.js" defer></script>
+
 
     <title>Pinterest</title>
 </head>

@@ -29,8 +29,8 @@ $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 
         <div class="category-edit">
             <ul>
-                <li><a href="/<?php out($user_nickname) ?>/edit-profile">Public profile</a></li>
-                <li><a href="/<?php out($user_nickname) ?>/account-settings">Account management</a></li>
+                <li><a href="/<?php _out($user_nickname) ?>/edit-profile">Public profile</a></li>
+                <li><a href="/<?php _out($user_nickname) ?>/account-settings">Account management</a></li>
                 <li>Personal information</li>
                 <li>Tune your home feed</li>
                 <li>Claimed accounts</li>
@@ -70,23 +70,23 @@ $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
                     <div class="grid">
                         <div>
                             <label for="user_firstname">First Name</label>
-                            <input type="text" name="user_firstname" value="<?php out($user_firstname) ?>">
+                            <input type="text" name="user_firstname" value="<?php _out($user_firstname) ?>">
                         </div>
 
                         <div>
                             <label for="user_lastname">Last Name</label>
-                            <input type="text" name="user_lastname" value="<?php out($user_lastname )?>">
+                            <input type="text" name="user_lastname" value="<?php _out($user_lastname )?>">
                         </div>
                     </div>
 
                     <label for="user_email">Email</label>
-                    <input type="text" name="user_email" value="<?php out($user_email) ?>">
+                    <input type="text" name="user_email" value="<?php _out($user_email) ?>">
 
                     <label for="user_password">Password</label>
-                    <input type="password" name="user_password" value="<?php out($user_password) ?>">
+                    <input type="password" name="user_password" value="<?php _out($user_password) ?>">
 
                     <label for="user_nickname">Username</label>
-                    <input type="text" name="user_nickname" value="<?php out($user_nickname) ?>">
+                    <input type="text" name="user_nickname" value="<?php _out($user_nickname) ?>">
                     <p class="terms">www.pinterest.com/szangyi
                     </p>
 

@@ -38,12 +38,12 @@ try {
 <section class="profile-container">
 
     <div class="profile-header-wrapper">
-        <p class="userLetter"><?php out($user_letter) ?></p>
+        <p class="userLetter"><?php _out($user_letter) ?></p>
         <div class="user-info-wrapper">
-            <h3><?php out($user_fullname) ?></h3>
-            <p>@<?php out($user_nickname) ?></p>
+            <h3><?php _out($user_fullname) ?></h3>
+            <p>@<?php _out($user_nickname) ?></p>
             <p>0 following</p>
-            <button><a href="/<?php out($user_nickname) ?>/edit-profile">Edit profile</a></button>
+            <button><a href="/<?php _out($user_nickname) ?>/edit-profile">Edit profile</a></button>
 
         </div>
     </div>

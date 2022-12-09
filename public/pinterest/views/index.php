@@ -1,10 +1,15 @@
+
 <?php require_once('./././private/initialize.php'); ?>
 
 <?php require_once(SHARED_PATH . '/header_pinterest.php'); ?>
 
 <?php
-    if(!isset($_COOKIE["login"]))
-    header("location: /login"); 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+if (!isset($_COOKIE["login"]))
+    header("location: /login");
 ?>
 
 

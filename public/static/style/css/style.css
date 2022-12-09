@@ -5,7 +5,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-#login, #signup {
+#login,
+#signup {
   background-image: url("../../assets/background-login.png");
   height: 100vh;
   background-repeat: no-repeat;
@@ -14,7 +15,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-#login button, #login [class*=wrapper] form input[type=submit], [class*=wrapper] form #login input[type=submit], #login .profile-edit-wrapper .profile-edit.account-settings form input[type=submit], .profile-edit-wrapper .profile-edit.account-settings form #login input[type=submit], #signup button, #signup [class*=wrapper] form input[type=submit], [class*=wrapper] form #signup input[type=submit], #signup .profile-edit-wrapper .profile-edit.account-settings form input[type=submit], .profile-edit-wrapper .profile-edit.account-settings form #signup input[type=submit] {
+#login button, #login [class*=wrapper] form input[type=submit], [class*=wrapper] form #login input[type=submit], #login .profile-edit-wrapper .profile-edit.account-settings form input[type=submit], .profile-edit-wrapper .profile-edit.account-settings form #login input[type=submit],
+#signup button,
+#signup [class*=wrapper] form input[type=submit],
+[class*=wrapper] form #signup input[type=submit],
+#signup .profile-edit-wrapper .profile-edit.account-settings form input[type=submit],
+.profile-edit-wrapper .profile-edit.account-settings form #signup input[type=submit] {
   margin-top: 0.5rem;
 }
 
@@ -49,6 +55,18 @@
   font-size: 11px;
   font-weight: 600;
   text-align: center;
+}
+.info-wrapper .input-container {
+  display: grid;
+  grid-template-columns: 0.4fr 3fr;
+  grid-gap: 0.3rem;
+}
+.info-wrapper .icon-container button, .info-wrapper .icon-container [class*=wrapper] form input[type=submit], [class*=wrapper] form .info-wrapper .icon-container input[type=submit], .info-wrapper .icon-container .profile-edit-wrapper .profile-edit.account-settings form input[type=submit], .profile-edit-wrapper .profile-edit.account-settings form .info-wrapper .icon-container input[type=submit] {
+  height: 48px;
+}
+.info-wrapper .icon-container button img, .info-wrapper .icon-container [class*=wrapper] form input[type=submit] img, [class*=wrapper] form .info-wrapper .icon-container input[type=submit] img, .info-wrapper .icon-container .profile-edit-wrapper .profile-edit.account-settings form input[type=submit] img, .profile-edit-wrapper .profile-edit.account-settings form .info-wrapper .icon-container input[type=submit] img {
+  height: 100%;
+  width: auto;
 }
 
 #signup form[data-steps="1"] .signup-part1,
@@ -471,7 +489,8 @@ html, body {
   align-items: center;
 }
 
-.row-flex, #login, #signup, .profile-edit-wrapper .profile-edit.account-settings form {
+.row-flex, #login,
+#signup, .profile-edit-wrapper .profile-edit.account-settings form {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -536,6 +555,34 @@ button, [class*=wrapper] form input[type=submit], .profile-edit-wrapper .profile
   text-align: center;
   border: none;
   cursor: pointer;
+}
+[class*=wrapper] form .error-message, [class*=wrapper] .profile-edit-wrapper .profile-edit form .error-message, .profile-edit-wrapper .profile-edit [class*=wrapper] form .error-message {
+  display: none;
+  margin: -0.2rem 0.2rem 0.5rem;
+}
+[class*=wrapper] form .error-message.show {
+  display: block;
+}
+[class*=wrapper] form .error-message p {
+  padding: 0;
+  font-size: 0.8rem;
+  color: #f90000;
+}
+[class*=wrapper] form .validate_error, [class*=wrapper] .profile-edit-wrapper .profile-edit form .validate_error, .profile-edit-wrapper .profile-edit [class*=wrapper] form .validate_error {
+  border: 2px solid #f90000;
+}
+[class*=wrapper] form .error-display, [class*=wrapper] .profile-edit-wrapper .profile-edit form .error-display, .profile-edit-wrapper .profile-edit [class*=wrapper] form .error-display {
+  background-color: rgba(249, 0, 0, 0.318);
+  color: #f90000;
+  text-align: center;
+  display: none;
+  border-radius: 20px;
+}
+[class*=wrapper] form .error-display.show {
+  display: block;
+}
+[class*=wrapper] form .error-display p {
+  color: #f90000;
 }
 
 /*# sourceMappingURL=style.css.map */

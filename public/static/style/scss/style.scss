@@ -136,5 +136,42 @@ form{
         cursor: pointer;
         
     }
+
+    .error-message {
+        display:none;
+        margin: -.2rem .2rem .5rem;
+
+        &.show {
+            display:block;
+        }
+
+        p {
+            padding: 0;
+            font-size: .8rem;
+            color: $color-red;
+        }
+    }
+
+    .validate_error {
+        border: 2px solid $color-red;
+    }
+
+    .error-display {
+        background-color: $color-red-opal;
+        color: $color-red;
+        text-align: center;
+        display: none;
+        border-radius: $round-md;
+
+        &.show {
+            display:block;
+        }
+
+        p {
+            color: $color-red;
+        }
+    }
+
+
 }
 }

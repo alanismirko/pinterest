@@ -31,6 +31,7 @@ $user_letter = ucfirst(substr($user_nickname, 0, 1));
     <link rel="icon" href="https://s.pinimg.com/webapp/favicon-54a5b2af.png">
 
     <script src="/public/pinterest/js/script.js" defer></script>
+    <script src="/public/pinterest/js/validator.js" defer></script>
 
     <title>Pinterest</title>
 </head>
@@ -57,14 +58,14 @@ $user_letter = ucfirst(substr($user_nickname, 0, 1));
 
                     <p>Currently in</p>
 
-                    <a href="/<?php out($user_nickname)?>">
+                    <a href="/<?php _out($user_nickname)?>">
                     <div class="profile-link-wrapper">
-                            <p class="userLetter"><?php out($user_letter) ?></p>
+                            <p class="userLetter"><?php _out($user_letter) ?></p>
                             <div class="user-info-wrapper">
-                                <p><strong><?php out($user_fullname) ?></strong></p>
-                                <p>@<?php out($user_nickname) ?></p>
+                                <p><strong><?php _out($user_fullname) ?></strong></p>
+                                <p>@<?php _out($user_nickname) ?></p>
                                 <p>Personal</p>
-                                <p><?php out($user_email) ?></p>
+                                <p><?php _out($user_email) ?></p>
                             </div>
                     </div>
                     </a>
