@@ -12,6 +12,7 @@
         $session_id = $login->create_session($email);
 
         if(!$authenticate){
+            $_SESSION["errorMessage"] = "Wrong email or password";
             header('location:/login-admin');
         }
         else{
