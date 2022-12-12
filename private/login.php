@@ -11,9 +11,6 @@ error_reporting(E_ALL);
 try {
     $session_id = rand();
     $email = _validate_user_email($_POST['email']);
-    ///////////////// ///////////////// ///////////////// ///////////////// ///////////////// /////////////////
-    $decoded_email = urldecode($email);
-    ///////////////// ///////////////// ///////////////// ///////////////// ///////////////// /////////////////
     $password_form = _validate_user_password($_POST['password']);
     $current_date = date("Y-m-d");
 
@@ -39,12 +36,10 @@ try {
         $query_session->bindValue(':session_created_at', $current_date);
         $query_session->execute();
         setcookie('login', $session_id, time() + 60 * 60 * 24 * 30, '/');
-        ///////////////// ///////////////// ///////////////// ///////////////// ///////////////// /////////////////
-        setcookie('user_email', $decoded_email); // NOT WORKING
-        ///////////////// ///////////////// ///////////////// ///////////////// ///////////////// /////////////////
+        setcookie('user_email', $email);
         setcookie('user_nickname', $user[0]['nick_name']);
 
-        header('Location: /home');
+        header('Location: /userlogin');
     } else {
         header('Location: /login');
     }

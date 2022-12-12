@@ -2,6 +2,7 @@
 
 require_once('././private/initialize.php');
 require_once('././private/db.php');
+require_once('_validator.php');
 // require_once (PRIVATE_PATH . '/db.php');
 
 $session_id = $_COOKIE['login'];
@@ -58,8 +59,8 @@ $user_letter = ucfirst(substr($user_nickname, 0, 1));
 
                     <p>Currently in</p>
 
-                    <a href="/<?php _out($user_nickname)?>">
-                    <div class="profile-link-wrapper">
+                    <a href="/<?php _out($user_nickname) ?>">
+                        <div class="profile-link-wrapper">
                             <p class="userLetter"><?php _out($user_letter) ?></p>
                             <div class="user-info-wrapper">
                                 <p><strong><?php _out($user_fullname) ?></strong></p>
@@ -67,7 +68,7 @@ $user_letter = ucfirst(substr($user_nickname, 0, 1));
                                 <p>Personal</p>
                                 <p><?php _out($user_email) ?></p>
                             </div>
-                    </div>
+                        </div>
                     </a>
 
                     <p>Your accounts</p>
