@@ -2,6 +2,8 @@
 
 define('_USER_NAME_MIN_LEN', 2);
 define('_USER_NAME_MAX_LEN', 20);
+define('_IMG_TITLE_MIN_LEN', 2);
+define('_IMG_TITLE_MAX_LEN', 100);
 define('_USER_LAST_NAME_MIN_LEN', 2);
 define('_USER_LAST_NAME_MAX_LEN', 20);
 define('_USER_PASSWORD_MIN_LEN', 6);
@@ -69,37 +71,56 @@ function _validate_user_email($user_email)
 }
 
 
+
 // ##############################
-function _validate_image()
-{
-    if ($_FILES['item_image']['error'] === UPLOAD_ERR_INI_SIZE) {
-        _respond('item_image too large', 400);
-    }
-    $item_image_temp_name = $_FILES["item_image"]["tmp_name"]; // C:\xampp\tmp\php791.tmp || C:\xampp\tmp\php5245.tmp
-    $target_dir = "images/";
-    $target_file = $target_dir . basename($_FILES["img"]["name"]);
-    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION)); // just reads the extension of the file
-    $image_mime = mime_content_type($_FILES["img"]["tmp_name"]); // reads the mime inside the file
-    $accepted_image_formats = ['image/png', 'image/jpeg'];
-    if (!in_array($image_mime, $accepted_image_formats)) {
+function _validate_image($file)
+{   
+
+    $error_message = 'image title not allowed or it was not uploaded';
+    $fileName = basename($file);
+    $image_id = rand();
+    $target_dir = "public/static/uploads/";
+    $targetFilePath = $target_dir . $fileName;
+    $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
+    $image_ref = $image_id . '.' . $fileType;
+     // reads the mime inside the file
+    $accepted_image_formats = ['png', 'jpeg', 'jpg'];
+
+    if (!in_array($fileType, $accepted_image_formats)) {
         http_response_code(400);
-        echo 'image not allowed';
-        exit();
-    }
-    $random_image_name = bin2hex(random_bytes(16));
-    switch ($image_mime) {
-        case 'image/png':
-            $random_image_name .= '.png';
-            break;
-        case 'image/jpeg':
-            $random_image_name .= '.jpeg';
-            break;
+        _respond($error_message);
     }
 
-    if (move_uploaded_file($_FILES["img"]["tmp_name"], 'images/2.png')) {
-        echo 'ok';
-        exit();
+    $targetDir = $target_dir;
+    $image_ref = $image_ref;
+    $upload = move_uploaded_file($_FILES["file"]["tmp_name"], $targetDir . $image_ref);
+
+    if($upload){
+        return $image_ref;
     }
+    else{
+        _respond($error_message);
+    }
+    
+
+}
+
+// ##############################
+function _validate_image_title($image_title)
+{
+    $error_message = 'image title ' . _IMG_TITLE_MIN_LEN . ' to ' . _IMG_TITLE_MAX_LEN . ' characters';
+    $image_title = trim($image_title);
+
+    if (!isset($image_title)) {
+        _respond($error_message, 400);
+    }
+    if (strlen($image_title) < _IMG_TITLE_MIN_LEN) {
+        _respond($error_message);
+    }
+    if (strlen($image_title) > _IMG_TITLE_MAX_LEN) {
+        _respond($error_message);
+    }
+    return $image_title;
 }
 
 

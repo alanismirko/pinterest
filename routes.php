@@ -35,7 +35,7 @@ post('/signup', 'private/signup.php');
 get('/delete-user/user_id/$user_id', 'public/admin/apis/delete_user.php');
 
 // CREATE POST - had to put it above user-profile
-get('/pin-builder', 'public/pinterest/views/post.php');
+get('/pin-builder', 'public/pinterest/views/create_pin.php');
 post('/create-post', 'private/create-post.php');
 
 // DELETE POST
@@ -51,7 +51,7 @@ post('/delete-profile', 'private/delete-profile.php');
 
 // USER PROFILE
 get('/$user_nickname/user-profile', 'public/pinterest/views/profile.php');
-get('/pin-builder', 'public/pinterest/views/post.php');
+get('/pin-builder', 'public/pinterest/views/create_pin.php');
 
 // ##################################################
 // ##################################################
