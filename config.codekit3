@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34408",
   "files" : {
+    "\/_validator.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/_validator.php",
+      "oF" : 0
+    },
     "\/.gitignore" : {
       "cB" : 0,
       "ft" : 8192,
@@ -33,6 +41,30 @@
       "oAP" : "\/index.php",
       "oF" : 0
     },
+    "\/private\/admin\/db_admin.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/private\/admin\/db_admin.php",
+      "oF" : 0
+    },
+    "\/private\/admin\/login_admin.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/private\/admin\/login_admin.php",
+      "oF" : 0
+    },
+    "\/private\/admin\/users.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/private\/admin\/users.php",
+      "oF" : 0
+    },
     "\/private\/create-post.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -47,6 +79,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/private\/db.php",
+      "oF" : 0
+    },
+    "\/private\/delete-post.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/private\/delete-post.php",
       "oF" : 0
     },
     "\/private\/delete-profile.php" : {
@@ -97,12 +137,44 @@
       "oAP" : "\/private\/update-profile.php",
       "oF" : 0
     },
+    "\/public\/admin\/apis\/delete_user.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/admin\/apis\/delete_user.php",
+      "oF" : 0
+    },
+    "\/public\/admin\/apis\/login.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/admin\/apis\/login.php",
+      "oF" : 0
+    },
+    "\/public\/admin\/apis\/logout.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/admin\/apis\/logout.php",
+      "oF" : 0
+    },
     "\/public\/admin\/views\/admin.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/public\/admin\/views\/admin.php",
+      "oF" : 0
+    },
+    "\/public\/login\/login_admin.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/login\/login_admin.php",
       "oF" : 0
     },
     "\/public\/login\/login.php" : {
@@ -151,6 +223,25 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/public\/pinterest\/js\/validator.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/public\/pinterest\/js\/validator-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/public\/pinterest\/views\/404.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/pinterest\/views\/404.php",
+      "oF" : 0
+    },
     "\/public\/pinterest\/views\/index.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -183,11 +274,37 @@
       "oAP" : "\/public\/pinterest\/views\/settings.php",
       "oF" : 0
     },
+    "\/public\/static\/assets\/arrow-back.png" : {
+      "ft" : 32768,
+      "iS" : 8569,
+      "oA" : 0,
+      "oAP" : "\/public\/static\/assets\/arrow-back.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/public\/static\/assets\/background-login.png" : {
       "ft" : 32768,
       "iS" : 3065771,
       "oA" : 0,
       "oAP" : "\/public\/static\/assets\/background-login.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/public\/static\/assets\/bin.png" : {
+      "ft" : 32768,
+      "iS" : 69703,
+      "oA" : 0,
+      "oAP" : "\/public\/static\/assets\/bin.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -306,6 +423,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/public\/static\/assets\/logout.png" : {
+      "ft" : 32768,
+      "iS" : 460,
+      "oA" : 0,
+      "oAP" : "\/public\/static\/assets\/logout.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/public\/static\/assets\/search_icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -315,6 +445,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/public\/static\/assets\/users.png" : {
+      "ft" : 32768,
+      "iS" : 298,
+      "oA" : 0,
+      "oAP" : "\/public\/static\/assets\/users.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
     },
     "\/public\/static\/shared\/footer.php" : {
       "cB" : 0,
@@ -338,6 +481,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/public\/static\/shared\/header.php",
+      "oF" : 0
+    },
+    "\/public\/static\/style\/css\/.css" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/static\/style\/css\/.css",
       "oF" : 0
     },
     "\/public\/static\/style\/css\/style-min.css" : {
@@ -371,6 +522,21 @@
       "oA" : 0,
       "oAP" : "\/public\/static\/style\/css\/style.css.map",
       "oF" : 0
+    },
+    "\/public\/static\/style\/scss\/admin.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/public\/static\/style\/scss\/admin.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/public\/static\/style\/scss\/login.scss" : {
       "aP" : 0,
@@ -425,7 +591,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/public\/static\/style\/scss\/post.css",
       "oF" : 0,
       "oS" : 0,
@@ -446,18 +612,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/public\/static\/style\/scss\/style.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/static\/style\/scss\/.css",
-      "oF" : 0,
-      "pg" : 0
     },
     "\/public\/static\/style\/scss\/style.scss" : {
       "aP" : 0,
@@ -503,6 +657,45 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/public\/static\/uploads\/1445490395.jpg" : {
+      "ft" : 16384,
+      "iS" : 349627,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/static\/uploads\/1445490395.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/public\/static\/uploads\/1813529560.jpg" : {
+      "ft" : 16384,
+      "iS" : 123135,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/static\/uploads\/1813529560.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/public\/static\/uploads\/2113486614.jpg" : {
+      "ft" : 16384,
+      "iS" : 123135,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/static\/uploads\/2113486614.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/README.md" : {
       "cB" : 0,

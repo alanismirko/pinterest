@@ -20,7 +20,7 @@ try{
         setcookie("user_email", "", time()-3600);
         header("location: /login"); 
     } else {
-        header('Location: /userlogin');
+        header('Location: /home');
     }
     
 }catch(Exception $ex){

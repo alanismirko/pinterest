@@ -9,24 +9,18 @@ if (!isset($_COOKIE["login"]))
 
 
 <section class="post-container">
-    <h1>CREATE POST </h1>
-
+    <!-- <h1> fea</h1> -->
     <div class="post-wrapper">
-        <p>text</p>
-
         <form action="/create-post" method="post" enctype="multipart/form-data">
-            Select Image File to Upload:
+            <h3>Create a pin</h3>
+
+            <textarea rows="1" class="input-lg" type="text" name="title" placeholder="Add your title"></textarea>
 
             <label for="file">Upload your file</label>
             <input type="file" name="file">
 
-            <label for="title">Title</label>
-            <input type="text" name="title" placeholder="Add your title">
-
             <input type="submit" name="submit" value="Upload">
         </form>
-
-
     </div>
 
 </section>
