@@ -6,6 +6,8 @@ header("location: /login-admin");
 
 <?php
     include_once('./././private/admin/users.php');
+    require_once('././_validator.php');
+
     $users = new Users();
     $all_users = $users->get_users();
 
@@ -50,12 +52,12 @@ header("location: /login-admin");
                     <tbody>
                         <?php foreach($all_users as $user){ ?>
                         <tr>
-                            <td><?php out($user[0]); ?></td>
-                            <td><?php out( $user[4]); ?></td>
-                            <td><?php out( $user[6]); ?></td>
-                            <td><?php out( $user[1]); ?></td>
-                            <td><?php out( $user[2]); ?></td>
-                            <td><?php out( $user[3]); ?></td>
+                            <td><?php _out($user[0]); ?></td>
+                            <td><?php _out( $user[4]); ?></td>
+                            <td><?php _out( $user[6]); ?></td>
+                            <td><?php _out( $user[1]); ?></td>
+                            <td><?php _out( $user[2]); ?></td>
+                            <td><?php _out( $user[3]); ?></td>
 
                             <?php $user['user_id']= $user[0]; ?>
                             <th id="delete"><button><a href="/delete-user/user_id/<?= $user['user_id']; ?>" >Delete</a></button></th>

@@ -1,8 +1,11 @@
 
-<?php require_once('././private/initialize.php'); ?>
+<?php 
+require_once('././private/initialize.php'); 
 
+require_once('_validator.php');
 
-<?php include(SHARED_PATH . '/header.php'); ?>
+include(SHARED_PATH . '/header.php'); 
+?>
 
 
 <div id="login">
@@ -22,7 +25,7 @@
         </form>
 
         <?php if (isset($_SESSION["errorMessage"])) { ?>
-        <div class="error-message"><?php  out($_SESSION["errorMessage"]); ?></div>
+        <div class="error-message"><?php  _out($_SESSION["errorMessage"]); ?></div>
         <?php unset($_SESSION["errorMessage"]);}?>
     </div>
 

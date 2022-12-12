@@ -37,7 +37,7 @@ try {
         $query_session->execute();
 
         setcookie('login', $session_id, time() + 60 * 60 * 24 * 30, '/');
-        setcookie('user_email', $email time() + 60*60*24*30, '/');
+        setcookie('user_email', $email, time() + 60*60*24*30, '/');
         setcookie('user_nickname', $user[0]['nick_name'], time() + 60*60*24*30, '/');
 
 
