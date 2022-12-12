@@ -318,10 +318,14 @@ nav .dropdown-wrapper .dropdownFlex {
   margin-top: 1rem;
   padding: 0.3rem 0;
   width: fit-content;
+  border-bottom: 2px solid #FFFFFF;
+  transition: 0.2s ease-in;
+}
+.profile-edit-wrapper .category-edit ul li:nth-of-type(1):hover, .profile-edit-wrapper .category-edit ul li:nth-of-type(1).active, .profile-edit-wrapper .category-edit ul li:nth-of-type(2):hover, .profile-edit-wrapper .category-edit ul li:nth-of-type(2).active {
+  border-bottom: 2px solid #111111;
 }
 .profile-edit-wrapper .category-edit ul li:nth-of-type(1) {
   margin-top: 0;
-  border-bottom: 2px solid;
 }
 .profile-edit-wrapper .profile-edit form, .profile-edit-wrapper .profile-edit form {
   width: 60%;
@@ -442,19 +446,6 @@ nav .dropdown-wrapper .dropdownFlex {
 .post-container {
   margin-top: 6rem;
   background-color: #EFEFEF;
-}
-
-.post-wrapper {
-  background-color: #FFFFFF;
-  border-radius: 20px;
-  width: 50%;
-  margin: auto;
-  min-height: 80vh;
-}
-
-.post-container {
-  margin-top: 6rem;
-  background-color: #EFEFEF;
   padding-top: 3rem;
 }
 
@@ -551,7 +542,6 @@ button, [class*=wrapper] form input[type=submit], .profile-edit-wrapper .profile
   font-size: 11px;
   padding: 1rem 0.3rem 0.3rem;
 }
-
 [class*=wrapper] form input, [class*=wrapper] .profile-edit-wrapper .profile-edit form input, .profile-edit-wrapper .profile-edit [class*=wrapper] form input, [class*=wrapper] form textarea, [class*=wrapper] .profile-edit-wrapper .profile-edit form textarea, .profile-edit-wrapper .profile-edit [class*=wrapper] form textarea {
   border: 2px solid #a5a5a5;
   width: 100%;
