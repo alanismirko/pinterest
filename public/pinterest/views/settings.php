@@ -87,7 +87,7 @@ $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 
                     <label for="user_nickname">Username</label>
                     <input type="text" name="user_nickname" placeholder="<?php _out($user_nickname) ?>">
-                    <p class="terms">www.pinterest.com/szangyi
+                    <p class="terms">www.pinterest.com/<?php _out($user_nickname)?>
                     </p>
 
                     <input type="submit" value="Save">
