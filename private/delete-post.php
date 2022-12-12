@@ -15,7 +15,7 @@ try {
     $query_image->bindValue(':image_ref', $image_ref);
     $query_image->execute();
 
-    header('Location: /' . $user_nickname);
+    header('Location: /' . $user_nickname . '/user-profile' );
     // header('Location: /home');
 
 } catch (PDOException $ex) {

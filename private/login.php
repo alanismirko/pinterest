@@ -4,9 +4,6 @@ require_once('db.php');
 require_once('_validator.php');
 
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 
 try {
     $session_id = rand();
@@ -18,6 +15,7 @@ try {
     $query_user->bindValue(':email', $email);
     $query_user->execute();
     $user = $query_user->fetchAll();
+    $user_id = $user[0]['user_id'];
 } catch (PDOException $ex) {
     echo $ex;
 }
@@ -30,9 +28,9 @@ try {
     // if (count(array_filter($_POST)) == count($_POST)) {
 
     if (password_verify($password_form, $user[0]['password'])) {
-        $query_session = $db->prepare('INSERT INTO sessions VALUES (:session_id, :session_user_email, :session_created_at)');
+        $query_session = $db->prepare('INSERT INTO sessions VALUES (:session_id, :session_user_id, :session_created_at)');
         $query_session->bindValue(':session_id', $session_id);
-        $query_session->bindValue(':session_user_email', $email);
+        $query_session->bindValue(':session_user_id', $user_id);
         $query_session->bindValue(':session_created_at', $current_date);
         $query_session->execute();
 

@@ -6,15 +6,14 @@ require_once('_validator.php');
 // require_once (PRIVATE_PATH . '/db.php');
 
 $session_id = $_COOKIE['login'];
+$user_email = $_COOKIE['user_email'];
 
-// WORKS - get user email - just to try JOIN, otherwise it's saved in cookie
-$query_user = $db->prepare('SELECT * FROM sessions JOIN users WHERE session_id=:session_id AND session_user_email=email');
-$query_user->bindValue(':session_id', $session_id);
+$query_user = $db->prepare('SELECT * FROM users WHERE email=:user_email');
+$query_user->bindValue(':user_email', $user_email);
 $query_user->execute();
 $query_user = $query_user->fetchAll();
 $user_fullname = $query_user[0]['first_name'] . ' ' . $query_user[0]['last_name'];
 $user_nickname = $query_user[0]['nick_name'];
-$user_email = $query_user[0]['email'];
 $user_dateofbirth = $query_user[0]['date_of_birth'];
 $user_letter = ucfirst(substr($user_nickname, 0, 1));
 
@@ -59,7 +58,7 @@ $user_letter = ucfirst(substr($user_nickname, 0, 1));
 
                     <p>Currently in</p>
 
-                    <a href="/<?php _out($user_nickname) ?>">
+                    <a href="/<?php _out($user_nickname) ?>/user-profile">
                         <div class="profile-link-wrapper">
                             <p class="userLetter"><?php _out($user_letter) ?></p>
                             <div class="user-info-wrapper">

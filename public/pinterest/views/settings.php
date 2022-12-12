@@ -3,20 +3,21 @@
 <?php require_once(SHARED_PATH . '/header_pinterest.php'); ?>
 
 <?php
+
 if (!isset($_COOKIE["login"]))
     header("location: /login");
 ?>
 
 <?php
-$query_user = $db->prepare('SELECT * FROM sessions JOIN users WHERE session_id=:session_id AND session_user_email=email');
-$query_user->bindValue(':session_id', $session_id);
+$user_email = $_COOKIE['user_email'];
+
+$query_user = $db->prepare('SELECT * FROM users WHERE email=:user_email');
+$query_user->bindValue(':user_email', $user_email);
 $query_user->execute();
 $query_user = $query_user->fetchAll();
 $user_firstname = $query_user[0]['first_name'];
 $user_lastname = $query_user[0]['last_name'];
 $user_nickname = $query_user[0]['nick_name'];
-$user_email = $query_user[0]['email'];
-$user_password = $query_user[0]['password'];
 $user_dateofbirth = $query_user[0]['date_of_birth'];
 $user_letter = ucfirst(substr($user_nickname, 0, 1));
 
@@ -24,13 +25,12 @@ $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 ?>
 
 <section class="profile-container">
-
     <div class="profile-edit-wrapper">
 
         <div class="category-edit">
             <ul>
-                <li><a href="/<?php _out($user_nickname) ?>/edit-profile">Public profile</a></li>
-                <li><a href="/<?php _out($user_nickname) ?>/account-settings">Account management</a></li>
+                <li class="<?php if (strpos($url, 'edit-profile') == true){echo 'active';} ?>"><a href="/<?php _out($user_nickname) ?>/edit-profile">Public profile</a></li>
+                <li class="<?php if (strpos($url, 'account-settings') == true){echo 'active';} ?>"><a href="/<?php _out($user_nickname) ?>/account-settings">Account management</a></li>
                 <li>Personal information</li>
                 <li>Tune your home feed</li>
                 <li>Claimed accounts</li>
@@ -70,24 +70,24 @@ $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
                     <div class="grid">
                         <div>
                             <label for="user_firstname">First Name</label>
-                            <input type="text" name="user_firstname" value="<?php _out($user_firstname) ?>">
+                            <input type="text" name="user_firstname" placeholder="<?php _out($user_firstname) ?>">
                         </div>
 
                         <div>
                             <label for="user_lastname">Last Name</label>
-                            <input type="text" name="user_lastname" value="<?php _out($user_lastname )?>">
+                            <input type="text" name="user_lastname" placeholder="<?php _out($user_lastname )?>">
                         </div>
                     </div>
 
                     <label for="user_email">Email</label>
-                    <input type="text" name="user_email" value="<?php _out($user_email) ?>">
+                    <input type="text" name="user_email" placeholder="<?php _out($user_email) ?>">
 
                     <label for="user_password">Password</label>
-                    <input type="password" name="user_password" value="<?php _out($user_password) ?>">
+                    <input type="password" name="user_password">
 
                     <label for="user_nickname">Username</label>
-                    <input type="text" name="user_nickname" value="<?php _out($user_nickname) ?>">
-                    <p class="terms">www.pinterest.com/szangyi
+                    <input type="text" name="user_nickname" placeholder="<?php _out($user_nickname) ?>">
+                    <p class="terms">www.pinterest.com/<?php _out($user_nickname)?>
                     </p>
 
                     <input type="submit" value="Save">
