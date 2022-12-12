@@ -28,7 +28,7 @@
 
                         input {
                             border: none;
-                            padding:0;
+                            padding: 0;
                         }
                     }
                 }
@@ -101,10 +101,19 @@
                 margin-top: $spacing-md;
                 padding: $spacing-xs 0;
                 width: fit-content;
+                border-bottom: 2px solid $color-white;
+                transition: 0.2s ease-in;
+
+                &:nth-of-type(1),
+                &:nth-of-type(2) {
+                    &:hover,
+                    &.active {
+                        border-bottom: 2px solid $color-black;
+                    }
+                }
 
                 &:nth-of-type(1) {
                     margin-top: 0;
-                    border-bottom: 2px solid;
                 }
             }
         }

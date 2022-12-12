@@ -18,6 +18,8 @@ if (!isset($_COOKIE["login"]))
         <div class="card">
             <img src="./public/static/assets/list/image1.svg" alt="">
             <p>Abstract</p>
+            <p><?php echo $_COOKIE['user_nickname'] ?></p>
+            <p><?php echo $_COOKIE['user_email'] ?></p>
         </div>
 
         <div class="card">
