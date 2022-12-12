@@ -55,12 +55,12 @@ try {
                     <div class="card">
                         <div class="overlay-container">
                             <form action="/delete-post" method="post">
-                                <img src="public/static/uploads/<?= $post['image_ref'] ?>">
+                                <img src="../public/static/uploads/<?= $post['image_ref'] ?>">
                                 <input type="hidden" id="image_ref" name="image_ref" value="<?= $post['image_ref'] ?>">
                                 <div class="overlay">
                                     <span class="icon-container">
                                         <!-- <a href="/delete-post"><img src="public/static/assets/bin.png" alt=""></a> -->
-                                        <input type="image" src="public/static/assets/bin.png">
+                                        <input type="image" src="../public/static/assets/bin.png">
                                     </span>
                                 </div>
                             </form>
