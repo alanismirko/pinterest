@@ -52,13 +52,17 @@ function validate(callback) {
                 let allowedExtensions =/(\.jpg|\.jpeg|\.png)$/i;
                 if (!allowedExtensions.exec(filePath)) {
                     element.classList.add("validate_error")
+                    element.nextElementSibling.classList.add("show")
+                    _one('.error-display').classList.add("show")
                 }
-                element.nextElementSibling.classList.add("show")
-                _one('.error-display').classList.add("show")
+
                 break;
         }
     })
-    if (!_one(".validate_error", form)) { callback(); return }
+    if (!_one(".validate_error", form)) { 
+        callback(); 
+        return 
+    }
     _one(".validate_error", form).focus()
 }
 
