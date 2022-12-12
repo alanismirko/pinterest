@@ -122,8 +122,6 @@ li {
 
 .image-list-wrapper {
   margin: 0px 50px 0px 50px;
-  -webkit-column-count: 4;
-  -moz-column-count: 4;
   column-count: 4;
   margin-top: 65px;
   margin-bottom: 1.5rem;
@@ -137,8 +135,6 @@ li {
   margin: 15px 10px;
   border-radius: var(--card_border_radius);
   transition: opacity 0.4s ease-in-out;
-  -webkit-column-break-inside: avoid;
-  -moz-column-break-inside: avoid;
   break-inside: avoid;
 }
 .image-list-wrapper .image-container .card p {
@@ -247,8 +243,6 @@ nav .dropdown-wrapper .dropdownFlex {
   margin-top: 6rem;
 }
 .profile-container .image-list-wrapper .image-container {
-  -webkit-column-count: 4;
-  -moz-column-count: 4;
   column-count: 4;
 }
 .profile-container .image-list-wrapper .image-container .overlay-container {
@@ -323,8 +317,6 @@ nav .dropdown-wrapper .dropdownFlex {
 .profile-edit-wrapper .category-edit ul li {
   margin-top: 1rem;
   padding: 0.3rem 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   border-bottom: 2px solid #FFFFFF;
   transition: 0.2s ease-in;
@@ -341,18 +333,10 @@ nav .dropdown-wrapper .dropdownFlex {
   margin-top: 1.5rem;
   justify-content: unset !important;
 }
-.profile-edit-wrapper .profile-edit form input::-webkit-input-placeholder {
-  color: #1C1C1C;
-}
-.profile-edit-wrapper .profile-edit form input::-moz-placeholder {
-  color: #1C1C1C;
-}
 .profile-edit-wrapper .profile-edit form input::placeholder {
   color: #1C1C1C;
 }
 .profile-edit-wrapper .profile-edit form input[type=submit] {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-top: 2rem;
 }
@@ -374,7 +358,6 @@ nav .dropdown-wrapper .dropdownFlex {
   flex-direction: row;
   gap: 1.5rem;
   margin: 1rem;
-  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   position: fixed;
@@ -399,7 +382,6 @@ nav .dropdown-wrapper .dropdownFlex {
   border-radius: 20px;
   padding: 1rem;
   border: 1px solid #EFF0F6;
-  -webkit-filter: drop-shadow(0px 5.63889px 22.5556px rgba(0, 0, 0, 0.05));
   filter: drop-shadow(0px 5.63889px 22.5556px rgba(0, 0, 0, 0.05));
 }
 .nav-wrapper #logo {
@@ -479,13 +461,9 @@ nav .dropdown-wrapper .dropdownFlex {
   margin-bottom: 1.5rem;
 }
 .post-wrapper form input[type=file] {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .post-wrapper form input[type=submit] {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin-top: 3rem !important;
 }
@@ -578,8 +556,6 @@ button, [class*=wrapper] form input[type=submit], .profile-edit-wrapper .profile
 [class*=wrapper] form textarea.input-lg {
   font-size: 2.5rem;
   font-family: "Roboto";
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 1rem 0;
   border: none;
