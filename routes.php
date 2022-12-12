@@ -18,7 +18,7 @@ get('/login-admin', 'public/login/login_admin.php');
 // LOGGED IN HOMEPAGE
 post('/login', 'private/login.php');
 post('/login-admin', 'public/admin/apis/login.php');
-get('/userlogin', 'public/pinterest/views/index.php');
+get('/home', 'public/pinterest/views/index.php');
 
 // LOG OUT 
 get('/logout', 'private/logout.php');

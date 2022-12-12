@@ -17,7 +17,7 @@ try{
         unset($_COOKIE['login']); 
         header("location: /login"); 
     } else {
-        header('Location: /userlogin');
+        header('Location: /home');
     }
     
 }catch(Exception $ex){

@@ -44,7 +44,7 @@ try {
         ///////////////// ///////////////// ///////////////// ///////////////// ///////////////// /////////////////
         setcookie('user_nickname', $user[0]['nick_name']);
 
-        header('Location: /userlogin');
+        header('Location: /home');
     } else {
         header('Location: /login');
     }

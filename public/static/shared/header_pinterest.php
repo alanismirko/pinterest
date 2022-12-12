@@ -40,7 +40,7 @@ $user_letter = ucfirst(substr($user_nickname, 0, 1));
 
     <nav>
         <!-- <img class="logo-round" src="./public/static/assets/logo.svg" alt="Logo"> -->
-        <a href="/userlogin"><img class="logo-round" src="/public/static/assets/logo.svg" alt="Logo"></a>
+        <a href="/home"><img class="logo-round" src="/public/static/assets/logo.svg" alt="Logo"></a>
         <form action="">
             <img src="/public/static/assets/search_icon.svg" alt="">
             <input type="search" placeholder="Search">
