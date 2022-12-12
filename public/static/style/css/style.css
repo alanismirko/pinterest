@@ -442,19 +442,6 @@ nav .dropdown-wrapper .dropdownFlex {
 .post-container {
   margin-top: 6rem;
   background-color: #EFEFEF;
-}
-
-.post-wrapper {
-  background-color: #FFFFFF;
-  border-radius: 20px;
-  width: 50%;
-  margin: auto;
-  min-height: 80vh;
-}
-
-.post-container {
-  margin-top: 6rem;
-  background-color: #EFEFEF;
   padding-top: 3rem;
 }
 
@@ -551,7 +538,6 @@ button, [class*=wrapper] form input[type=submit], .profile-edit-wrapper .profile
   font-size: 11px;
   padding: 1rem 0.3rem 0.3rem;
 }
-
 [class*=wrapper] form input, [class*=wrapper] .profile-edit-wrapper .profile-edit form input, .profile-edit-wrapper .profile-edit [class*=wrapper] form input, [class*=wrapper] form textarea, [class*=wrapper] .profile-edit-wrapper .profile-edit form textarea, .profile-edit-wrapper .profile-edit [class*=wrapper] form textarea {
   border: 2px solid #a5a5a5;
   width: 100%;
