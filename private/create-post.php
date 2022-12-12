@@ -25,7 +25,7 @@ try {
     $query_image->bindValue(':created_at', $created_at);
     $query_image->execute();
 
-    header('Location: /' . $user_nickname);
+    header('Location: /' . $user_nickname . '/user-profile/' );
 
 } catch (PDOException $ex) {
     echo $ex;

@@ -59,7 +59,7 @@ $user_letter = ucfirst(substr($user_nickname, 0, 1));
 
                     <p>Currently in</p>
 
-                    <a href="/<?php _out($user_nickname) ?>">
+                    <a href="/<?php _out($user_nickname) ?>/user-profile">
                         <div class="profile-link-wrapper">
                             <p class="userLetter"><?php _out($user_letter) ?></p>
                             <div class="user-info-wrapper">

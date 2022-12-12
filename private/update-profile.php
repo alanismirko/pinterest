@@ -24,7 +24,7 @@ try {
     $query_user->execute();
 
     // header('Location: /' . $user_nickname . '/edit');
-    header('Location: /' . $user_nickname);
+    header('Location: /' . $user_nickname . '/user-profile/' );
 } catch (PDOException $ex) {
     echo $ex;
 }

@@ -50,7 +50,7 @@ get('/$user_nickname/account-settings', 'public/pinterest/views/settings.php');
 post('/delete-profile', 'private/delete-profile.php');
 
 // USER PROFILE
-get('/$user_nickname', 'public/pinterest/views/profile.php');
+get('/$user_nickname/user-profile', 'public/pinterest/views/profile.php');
 get('/pin-builder', 'public/pinterest/views/post.php');
 
 // ##################################################
@@ -61,4 +61,4 @@ get('/pin-builder', 'public/pinterest/views/post.php');
 // For GET or POST
 // The 404.php which is inside the views folder will be called
 // The 404.php has access to $_GET and $_POST
-// any('/404','public/pinterest/views/404.php');
+any('/404','public/pinterest/views/404.php');

@@ -3,6 +3,7 @@
 <?php require_once(SHARED_PATH . '/header_pinterest.php'); ?>
 
 <?php
+
 if (!isset($_COOKIE["login"]))
     header("location: /login");
 ?>
@@ -24,7 +25,6 @@ $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 ?>
 
 <section class="profile-container">
-
     <div class="profile-edit-wrapper">
 
         <div class="category-edit">
