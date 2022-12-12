@@ -29,6 +29,12 @@
     border: 1px solid #EFF0F6;
     filter: drop-shadow(0px 5.63889px 22.5556px rgba(0, 0, 0, 0.05));
 
+    #logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: $spacing-lg;
+    }
     .navigation{
         margin-top: $spacing-md;
         .nav-button-wrapper{
@@ -40,11 +46,7 @@
                 width: 24px;
             }
         }
-        .nav-button-wrapper:hover{
-            border-radius: $round-md;
-            background-color: $color-text-hover;
-            padding-top: $spacing-md;
-        }
+
     }
 }
 
@@ -55,7 +57,6 @@
     h2{
         margin-top: $spacing-xl;
         padding-bottom: $spacing-xl;
-        border-bottom: 1px solid $color-grey-light;
         text-align: left;
     }
     .table-wrapper{
@@ -63,20 +64,40 @@
         table{
             overflow: auto;
             border-collapse: collapse;
-            min-width: 400px;
+            width: 100%;
             background-color: $color-white;
             border-radius: $round-md;
             color: $color-grey-dark;
 
             thead{
-                border-bottom: 1px solid $color-grey-light;
                 margin: 0px $spacing-sm;
+                pointer-events: none;
+
+            }
+
+            th, td{
+                padding: $spacing-sm;
+                text-align: left;
+            }
+
+
+
+            tr:hover{
+                border-radius: $round-md;
+                background-color: $color-text-hover;
             }
 
             tbody{
-                #delete{
+                button{
+                    background-color: $color-red;
+                    margin-top: 0px;
                     cursor: pointer;
+
+                    a{
+                        color: $color-white;
+                    }
                 }
+
             }
 
 

@@ -20,7 +20,13 @@
 
             <input type="submit" name="login" value="Continue">
         </form>
+
+        <?php if (isset($_SESSION["errorMessage"])) { ?>
+        <div class="error-message"><?php  out($_SESSION["errorMessage"]); ?></div>
+        <?php unset($_SESSION["errorMessage"]);}?>
     </div>
+
+
 </div>
 
 

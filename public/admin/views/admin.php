@@ -1,11 +1,7 @@
 <?php
-    session_start();
-    if(!isset($_SESSION['user']) ||(trim ($_SESSION['user']) == '')){
-        header('location:/login-admin');
 
-    }
-
-
+if(!isset($_COOKIE["login_admin"]))
+header("location: /login-admin"); 
 ?>
 
 <?php
@@ -22,7 +18,7 @@
 <div class="admin-wrapper">
     <div class="workspace-wrapper">
         <div class="nav-wrapper">
-            <img src="./public/static/assets/logo.svg" alt="Logo">
+            <img id="logo" src="./public/static/assets/logo.svg" alt="Logo">
 
             <div class="navigation">
                 <a class="nav-button-wrapper">
@@ -46,16 +42,23 @@
                             <th>User id</th>
                             <th>Email</th>
                             <th>Date of birth</th>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>Username</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php foreach($all_users as $user){ ?>
                         <tr>
-                            <td><?php echo $user[0]; ?></td>
-                            <td><?php echo $user[4]; ?></td>
-                            <td><?php echo $user[6] ?></td>
+                            <td><?php out($user[0]); ?></td>
+                            <td><?php out( $user[4]); ?></td>
+                            <td><?php out( $user[6]); ?></td>
+                            <td><?php out( $user[1]); ?></td>
+                            <td><?php out( $user[2]); ?></td>
+                            <td><?php out( $user[3]); ?></td>
+
                             <?php $user['user_id']= $user[0]; ?>
-                            <th id="delete"><a href="/delete-user/user_id/<?= $user['user_id']; ?>" >Delete</a></th>
+                            <th id="delete"><button><a href="/delete-user/user_id/<?= $user['user_id']; ?>" >Delete</a></button></th>
                         </tr>
                         <?php } ?>
                     </tbody>

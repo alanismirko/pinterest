@@ -15,6 +15,9 @@ try{
             echo $ex;
         }
         unset($_COOKIE['login']); 
+        unset($_COOKIE['user_email']); 
+        setcookie("login", "", time()-3600);
+        setcookie("user_email", "", time()-3600);
         header("location: /login"); 
     } else {
         header('Location: /home');

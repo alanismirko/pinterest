@@ -35,11 +35,13 @@ try {
         $query_session->bindValue(':session_user_email', $email);
         $query_session->bindValue(':session_created_at', $current_date);
         $query_session->execute();
-        setcookie('login', $session_id, time() + 60 * 60 * 24 * 30, '/');
-        setcookie('user_email', $email);
-        setcookie('user_nickname', $user[0]['nick_name']);
 
-        header('Location: /userlogin');
+        setcookie('login', $session_id, time() + 60 * 60 * 24 * 30, '/');
+        setcookie('user_email', $email time() + 60*60*24*30, '/');
+        setcookie('user_nickname', $user[0]['nick_name'], time() + 60*60*24*30, '/');
+
+
+        header('Location: /home');
     } else {
         header('Location: /login');
     }
