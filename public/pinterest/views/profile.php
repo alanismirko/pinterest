@@ -1,19 +1,17 @@
 <?php require_once('./././private/initialize.php'); ?>
 <?php require_once('./././private/db.php'); ?>
+<?php require_once('./././_validator.php'); ?>
 
 <?php require_once(SHARED_PATH . '/header_pinterest.php'); ?>
 
 <?php
-
 $url = substr($_SERVER['REQUEST_URI'], 1);
 $user_nickname = $_COOKIE['user_nickname'];
+$user_url = $user_nickname . '/user-profile';
 
-echo $url;
-echo '</br>';
-echo $user_nickname;
 if (!isset($_COOKIE["login"]))
     header("location: /login");
-if ($url !== $user_nickname) {
+if ($url !== $user_url) {
     header("location: /404");
 }
 ?>
@@ -43,7 +41,7 @@ try {
             <h3><?php _out($user_fullname) ?></h3>
             <p>@<?php _out($user_nickname) ?></p>
             <p>0 following</p>
-            <a href="/<?php _out($user_nickname) ?>/edit-profile"><button>Edit profile</button></a>
+            <button><a href="/<?php _out($user_nickname) ?>/edit-profile">Edit profile</a></button>
 
         </div>
     </div>
@@ -57,12 +55,12 @@ try {
                     <div class="card">
                         <div class="overlay-container">
                             <form action="/delete-post" method="post">
-                                <img src="public/static/uploads/<?= $post['image_ref'] ?>">
+                                <img src="../public/static/uploads/<?= $post['image_ref'] ?>">
                                 <input type="hidden" id="image_ref" name="image_ref" value="<?= $post['image_ref'] ?>">
                                 <div class="overlay">
                                     <span class="icon-container">
                                         <!-- <a href="/delete-post"><img src="public/static/assets/bin.png" alt=""></a> -->
-                                        <input type="image" src="public/static/assets/bin.png">
+                                        <input type="image" src="../public/static/assets/bin.png">
                                     </span>
                                 </div>
                             </form>

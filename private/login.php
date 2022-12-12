@@ -4,9 +4,6 @@ require_once('db.php');
 require_once('_validator.php');
 
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 
 try {
     $session_id = rand();

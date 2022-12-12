@@ -1,4 +1,4 @@
-// ##############################
+ // ##############################
 function validate(callback) {
     const form = event.target
     console.log(form)
@@ -47,9 +47,22 @@ function validate(callback) {
                     element.classList.add("validate_error")
                 }
                 break;
+            case "img":
+                let filePath = element.value;
+                let allowedExtensions =/(\.jpg|\.jpeg|\.png)$/i;
+                if (!allowedExtensions.exec(filePath)) {
+                    element.classList.add("validate_error")
+                    element.nextElementSibling.classList.add("show")
+                    _one('.error-display').classList.add("show")
+                }
+
+                break;
         }
     })
-    if (!_one(".validate_error", form)) { callback(); return }
+    if (!_one(".validate_error", form)) { 
+        callback(); 
+        return 
+    }
     _one(".validate_error", form).focus()
 }
 
