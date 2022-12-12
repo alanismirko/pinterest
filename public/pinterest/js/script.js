@@ -1,3 +1,7 @@
+function _all(q, e = document) { return e.querySelectorAll(q) }
+function _one(q, e = document) { return e.querySelector(q) }
+
+
 if (document.getElementById("dropdownButton")) {
     document.getElementById("dropdownButton").addEventListener("click", openDropwdown);
 
@@ -9,9 +13,15 @@ if (document.getElementById("dropdownButton")) {
 
 
 if (document.querySelector('#signup')) {
-    document.querySelector('#signup form button').addEventListener("click", activateSignup);
+    document.querySelector('#signup form button#stepup').addEventListener("click", stepupSignup);
+    document.querySelector('#signup form button#stepdown').addEventListener("click", stepdownSignup);
 
-    function activateSignup() {
+    function stepupSignup() {
         document.querySelector('#signup form').dataset.steps = "2"
     }
+
+    function stepdownSignup() {
+        document.querySelector('#signup form').dataset.steps = "1"
+    }
+
 }

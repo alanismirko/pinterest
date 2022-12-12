@@ -3,6 +3,7 @@
 .post-container {
     margin-top: $spacing-xxxl;
     background-color: $color-search;
+    padding-top: $spacing-xxl;
 }
 
 
@@ -12,4 +13,21 @@
     width:$width-half;
     margin: auto;
     min-height: 80vh;
+    padding: $spacing-xxl;
+
+    h3 {
+        margin-bottom: $spacing-lg;
+    }
+
+    form {
+        input[type=file] {
+            height:fit-content;
+        }
+
+        input[type=submit] {
+            // width: 50%;
+            width: fit-content;
+            margin-top: $spacing-xxl !important;
+        }
+    }
 }
