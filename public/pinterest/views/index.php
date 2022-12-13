@@ -4,17 +4,29 @@
 <?php require_once(SHARED_PATH . '/header_pinterest.php'); ?>
 
 <?php
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
-
 if (!isset($_COOKIE["login"]))
     header("location: /login");
+
+try {
+    $query_post = $db->prepare('SELECT * FROM images');
+    $query_post->execute();
+    $posts = $query_post->fetchAll();
+} catch (PDOException $ex) {
+    echo $ex;
+}    
 ?>
 
 
 <div class="image-list-wrapper">
     <div class="image-container">
+    <?php foreach ($posts as $post) { ?>
+        <div class="card">
+            <img src="./public/static/uploads/<?= $post['image_ref'] ?>">
+            <p><?= $post['image_title'] ?></p>
+        </div>
+    <?php } ?>
+
+
         <div class="card">
             <img src="./public/static/assets/list/image1.svg" alt="">
             <p>Abstract</p>
