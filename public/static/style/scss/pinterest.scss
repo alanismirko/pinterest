@@ -12,10 +12,13 @@
         .card {
             padding: 0;
             margin: 15px 10px;
-            border-radius: var(--card_border_radius);
             transition: opacity .4s ease-in-out;
             break-inside: avoid;
             @extend .column-flex;
+
+            img {
+                border-radius: $round-md;
+            }
 
             p{
                 padding-top: $spacing-sm;

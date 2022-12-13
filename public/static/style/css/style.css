@@ -133,9 +133,11 @@ li {
 .image-list-wrapper .image-container .card {
   padding: 0;
   margin: 15px 10px;
-  border-radius: var(--card_border_radius);
   transition: opacity 0.4s ease-in-out;
   break-inside: avoid;
+}
+.image-list-wrapper .image-container .card img {
+  border-radius: 20px;
 }
 .image-list-wrapper .image-container .card p {
   padding-top: 0.5rem;
