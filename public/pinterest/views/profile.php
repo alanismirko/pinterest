@@ -59,7 +59,6 @@ try {
                                 <input type="hidden" id="image_ref" name="image_ref" value="<?= $post['image_ref'] ?>">
                                 <div class="overlay">
                                     <span class="icon-container">
-                                        <!-- <a href="/delete-post"><img src="public/static/assets/bin.png" alt=""></a> -->
                                         <input type="image" src="../public/static/assets/bin.png">
                                     </span>
                                 </div>

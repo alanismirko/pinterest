@@ -346,6 +346,11 @@ nav .dropdown-wrapper .dropdownFlex {
   grid-gap: 0.5rem;
 }
 .profile-edit-wrapper .profile-edit .terms {
+  display: flex;
+  flex-direction: row;
+}
+.profile-edit-wrapper .profile-edit .terms p {
+  display: inline-flex;
   color: #C6C6C6;
 }
 .profile-edit-wrapper .profile-edit.account-settings form input[type=submit] {
@@ -443,7 +448,6 @@ nav .dropdown-wrapper .dropdownFlex {
   color: #FFFFFF;
 }
 
-}
 .post-container {
   margin-top: 6rem;
   background-color: #EFEFEF;
@@ -543,7 +547,6 @@ button, [class*=wrapper] form input[type=submit], .profile-edit-wrapper .profile
   font-size: 11px;
   padding: 1rem 0.3rem 0.3rem;
 }
-
 [class*=wrapper] form input, [class*=wrapper] .profile-edit-wrapper .profile-edit form input, .profile-edit-wrapper .profile-edit [class*=wrapper] form input, [class*=wrapper] form textarea, [class*=wrapper] .profile-edit-wrapper .profile-edit form textarea, .profile-edit-wrapper .profile-edit [class*=wrapper] form textarea {
   border: 2px solid #a5a5a5;
   width: 100%;

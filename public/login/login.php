@@ -2,6 +2,12 @@
 
 <?php include(SHARED_PATH . '/header.php'); ?>
 
+<?php
+if (isset($_COOKIE["login"])) {
+    header("location: /home");
+}
+?>
+
 <div id="login">
     <h1>Log in to <br> get your <br> ideas</h1>
 
@@ -15,7 +21,7 @@
             </div>
 
             <label for="email">Email</label>
-            <input type="text" name="email" placeholder="Email" data-validate="email">
+            <input type="text" name="email" placeholder="Your Email" data-validate="email">
             <span class="error-message">
                 <p class="ml-2 text-xs">That is not a correct e-mail format.</p>
             </span>

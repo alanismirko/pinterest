@@ -29,8 +29,12 @@ $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 
         <div class="category-edit">
             <ul>
-                <li class="<?php if (strpos($url, 'edit-profile') == true){echo 'active';} ?>"><a href="/<?php _out($user_nickname) ?>/edit-profile">Public profile</a></li>
-                <li class="<?php if (strpos($url, 'account-settings') == true){echo 'active';} ?>"><a href="/<?php _out($user_nickname) ?>/account-settings">Account management</a></li>
+                <li class="<?php if (strpos($url, 'edit-profile') == true) {
+                                echo 'active';
+                            } ?>"><a href="/<?php _out($user_nickname) ?>/edit-profile">Public profile</a></li>
+                <li class="<?php if (strpos($url, 'account-settings') == true) {
+                                echo 'active';
+                            } ?>"><a href="/<?php _out($user_nickname) ?>/account-settings">Account management</a></li>
                 <li>Personal information</li>
                 <li>Tune your home feed</li>
                 <li>Claimed accounts</li>
@@ -75,7 +79,7 @@ $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 
                         <div>
                             <label for="user_lastname">Last Name</label>
-                            <input type="text" name="user_lastname" placeholder="<?php _out($user_lastname )?>">
+                            <input type="text" name="user_lastname" placeholder="<?php _out($user_lastname) ?>">
                         </div>
                     </div>
 
@@ -86,9 +90,11 @@ $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
                     <input type="password" name="user_password">
 
                     <label for="user_nickname">Username</label>
-                    <input type="text" name="user_nickname" placeholder="<?php _out($user_nickname) ?>">
-                    <p class="terms">www.pinterest.com/<?php _out($user_nickname)?>
-                    </p>
+                    <input type="text" id="nickname-input" name="user_nickname" placeholder="<?php _out($user_nickname) ?>">
+                    <span class="terms">
+                        <p>www.pinterest.com/</p>
+                        <p id="nickname-output"><?php _out($user_nickname) ?></p>
+                    </span>
 
                     <input type="submit" value="Save">
                 </form>
