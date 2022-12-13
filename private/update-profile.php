@@ -12,6 +12,7 @@ try {
     $query_user->bindValue(':user_email', $user_email);
     $query_user->execute();
     $query_user = $query_user->fetchAll();
+    $user_firstname = $query_user[0]['first_name'];
     $user_lastname = $query_user[0]['last_name'];
     $user_password_hashed = $query_user[0]['password'];
 

@@ -145,7 +145,12 @@
         }
 
         .terms {
-            color: $color-grey-light;
+            display: flex;
+            flex-direction: row;
+            p {
+                display: inline-flex;
+                color: $color-grey-light;
+            }
         }
 
         &.account-settings {

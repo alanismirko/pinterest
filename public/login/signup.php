@@ -2,6 +2,14 @@
 
 <?php include(SHARED_PATH . '/header.php'); ?>
 
+<?php
+if (!isset($_COOKIE["login"])) {
+    header("location: /signup");
+} else {
+    header("location: /home");
+}
+?>
+
 <div id="signup">
     <h1>Sign up to <br> get your <br> ideas</h1>
 
