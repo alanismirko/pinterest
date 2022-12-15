@@ -3,8 +3,6 @@ require_once('initialize.php');
 require_once('db.php');
 require_once('_validator.php');
 
-
-
 try {
     $session_id = rand();
     $email = _validate_user_email($_POST['email']);
@@ -21,12 +19,7 @@ try {
 }
 
 
-
-// if (isset($email) && isset($password)) {
 try {
-    // to check if all input fields are filled
-    // if (count(array_filter($_POST)) == count($_POST)) {
-
     if (password_verify($password_form, $user[0]['password'])) {
         $query_session = $db->prepare('INSERT INTO sessions VALUES (:session_id, :session_user_id, :session_created_at)');
         $query_session->bindValue(':session_id', $session_id);
@@ -35,9 +28,8 @@ try {
         $query_session->execute();
 
         setcookie('login', $session_id, time() + 60 * 60 * 24 * 30, '/');
-        setcookie('user_email', $email, time() + 60*60*24*30, '/');
-        setcookie('user_nickname', $user[0]['nick_name'], time() + 60*60*24*30, '/');
-
+        setcookie('user_email', $email, time() + 60 * 60 * 24 * 30, '/');
+        setcookie('user_nickname', $user[0]['nick_name'], time() + 60 * 60 * 24 * 30, '/');
 
         header('Location: /home');
     } else {

@@ -16,8 +16,6 @@ try {
     $query_image->execute();
 
     header('Location: /' . $user_nickname . '/user-profile' );
-    // header('Location: /home');
-
 } catch (PDOException $ex) {
     echo $ex;
 }

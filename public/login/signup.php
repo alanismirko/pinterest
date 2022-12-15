@@ -3,9 +3,7 @@
 <?php include(SHARED_PATH . '/header.php'); ?>
 
 <?php
-if (!isset($_COOKIE["login"])) {
-    header("location: /signup");
-} else {
+if (isset($_COOKIE["login"])) {
     header("location: /home");
 }
 ?>
@@ -76,7 +74,7 @@ if (!isset($_COOKIE["login"])) {
             <b>Privacy Policy</b>
         </p>
 
-        <a href="login.php">Already a member? Log in</a>
+        <a href="/login">Already a member? Log in</a>
     </div>
 </div>
 

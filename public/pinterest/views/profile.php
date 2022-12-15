@@ -41,7 +41,7 @@ try {
             <h3><?php _out($user_fullname) ?></h3>
             <p>@<?php _out($user_nickname) ?></p>
             <p>0 following</p>
-            <button><a href="/<?php _out($user_nickname) ?>/edit-profile">Edit profile</a></button>
+            <a href="/<?php _out($user_nickname) ?>/edit-profile"><button>Edit profile</button></a>
 
         </div>
     </div>

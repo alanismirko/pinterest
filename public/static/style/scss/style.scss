@@ -162,6 +162,8 @@ form{
         text-align: center; 
         display: none;
         border-radius: $round-md;
+        padding: $spacing-md;
+        margin-bottom: $spacing-lg;
 
         &.show {
             display:block;

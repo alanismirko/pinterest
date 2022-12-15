@@ -2,6 +2,7 @@
 require_once('initialize.php');
 require_once('db.php');
 
+
 try {
     $user_email_original = $_COOKIE['user_email'];
     $user_email = $_COOKIE['user_email'];
@@ -16,7 +17,11 @@ try {
     $user_lastname = $query_user[0]['last_name'];
     $user_password_hashed = $query_user[0]['password'];
 
+} catch (PDOException $ex) {
+    echo $ex;
+}
 
+try {
     //////////// If firstname is changed
     if (isset($_POST['user_firstname']) && ($_POST['user_firstname'] !== "")) {
         $user_firstname = $_POST['user_firstname'];
@@ -56,9 +61,7 @@ try {
     $query_user->bindValue(':email_original', $user_email_original);
     $query_user->execute();
 
-    // header('Location: /' . $user_nickname . '/edit');
-    header('Location: /' . $user_nickname . '/user-profile' );
-
+    header('Location: /' . $user_nickname . '/user-profile');
 } catch (PDOException $ex) {
     echo $ex;
 }

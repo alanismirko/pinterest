@@ -31,7 +31,6 @@ if (_one('#nickname-input')) {
     _one('#nickname-input').addEventListener("input", printOutput);
 
     function printOutput() {
-        console.log('inputtttt')
         _one('#nickname-output').innerText = _one('#nickname-input').value
     }
 }

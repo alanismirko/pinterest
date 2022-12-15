@@ -2,7 +2,7 @@
 
  class DbConnection{
     private $host = 'localhost';
-    private $username='root';
+    private $username='pinterest_root';
     private $password = '1234';
     private $database='pinterest_php';
 

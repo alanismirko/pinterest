@@ -601,6 +601,8 @@ button, [class*=wrapper] form input[type=submit], .profile-edit-wrapper .profile
   text-align: center;
   display: none;
   border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
 }
 [class*=wrapper] form .error-display.show {
   display: block;

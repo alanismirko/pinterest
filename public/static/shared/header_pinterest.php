@@ -3,7 +3,6 @@
 require_once('././private/initialize.php');
 require_once('././private/db.php');
 require_once('_validator.php');
-// require_once (PRIVATE_PATH . '/db.php');
 
 $session_id = $_COOKIE['login'];
 $user_email = $_COOKIE['user_email'];

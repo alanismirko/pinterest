@@ -16,8 +16,10 @@ try{
         }
         unset($_COOKIE['login']); 
         unset($_COOKIE['user_email']); 
+        unset($_COOKIE['user_nickname']); 
         setcookie("login", "", time()-3600);
         setcookie("user_email", "", time()-3600);
+        setcookie("user_nickname", "", time()-3600);
         header("location: /login"); 
     } else {
         header('Location: /home');
